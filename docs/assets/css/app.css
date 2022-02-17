@@ -9146,7 +9146,11 @@ a.faq-title:before:hover {
 #register h1,
 #register h4 {
   color: #fff;
-  text-shadow: 0 0px 8px #000000; }
+  text-shadow: 0 0px 8px #000000; 
+background:rgba(0,32,86,0.75);
+border-radius: .5rem;
+}
+
 
 .registration-block .reg-large-btn {
   font-size: 1.75rem;
@@ -9169,8 +9173,6 @@ a.faq-title:before:hover {
   background: #002056;
   color: #8cecff; }
 
-h1.title-register {
-  xbackground: rgba(0, 0, 0, 0.6); }
 
 /* register-end */
 /* footer-block start */
