@@ -9208,6 +9208,9 @@ box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);}
 .thankyou_text {
   margin-top:-1.25rem;
 }
+.discord-link {
+  color:#36bde6;
+}
 .register-modal {
   background:#002056;
   color:#fff;
