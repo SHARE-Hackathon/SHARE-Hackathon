@@ -8776,24 +8776,15 @@ x.theme-container {
   color: #fff; }
 
 #schedule-section-container .section {
-  xbackground: url("../img/back_schedule2.jpg") no-repeat;
   background-position: left bottom;
   background-size: contain; }
-
-.schedule-block {
-  xmargin-top: -200px; }
 
 .schedule-block h4 {
   padding: 10px 0 1rem; }
 
 table {
   border-collapse: collapse;
-  xborder-radius: .5rem;
   overflow: hidden;
-  xborder: 1px solid rgba(0, 0, 0, 0.12);
-  x-moz-box-shadow: 0px 2px 10px rgba(68, 68, 68, 0.5);
-  x-webkit-box-shadow: 0px 2px 10px rgba(68, 68, 68, 0.5);
-  xbox-shadow: 0px 2px 10px rgba(68, 68, 68, 0.5);
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6); }
 
@@ -8813,10 +8804,7 @@ table {
   font-weight: 600;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
-  xcolor: #fff;
-  x-moz-box-shadow: inset 0px 5px 12px rgba(68, 68, 68, 0.4);
-  x-webkit-box-shadow: 0px 5px 12px rgba(68, 68, 68, 0.4);
-  xbox-shadow: 0px 5px 12px rgba(68, 68, 68, 0.4); }
+ }
 
 .schedule-table th,
 .schedule-table td {
@@ -8825,36 +8813,32 @@ table {
 .schedule-table th.date {
   background: #39bbd5;
   border-right: solid 1px rgba(68, 68, 68, 0.3);
-  background: rgba(57, 187, 213, 0.9); }
+  background: rgba(57, 187, 213, 0.9); 
+xwidth:15%;}
 
 .schedule-table th.time {
   background: #8cc540;
   border-right: solid 1px rgba(68, 68, 68, 0.3);
-  background: rgba(140, 197, 64, 0.9); }
+  background: rgba(140, 197, 64, 0.9);
+  xwidth:15%; }
 
 .schedule-table th.description {
   background: #ee8122;
-  background: rgba(238, 129, 34, 0.9); }
+  background: rgba(238, 129, 34, 0.9);
+  width:60%; }
 
 .schedule-table td {
   background: rgba(0, 0, 0, 0.85);
   vertical-align: top;
   border: none;
-  xborder-bottom: solid 2px rgba(57, 187, 213, 0.15);
   border-left: solid 2px rgba(57, 187, 213, 0.15); }
 
 .schedule-table td.time {
   border-left: 1px solid rgba(0, 0, 0, 0.15);
   border-right: 1px solid rgba(0, 0, 0, 0.15);
-  x-moz-box-shadow: inset 0px 5px 12px rgba(68, 68, 68, 0.2);
-  x-webkit-box-shadow: 0px 5px 12px rgba(68, 68, 68, 0.2);
-  xbox-shadow: 0px 5px 12px rgba(68, 68, 68, 0.2);
   border-left: solid 2px rgba(140, 197, 64, 0.15); }
 
 .schedule-table td.description {
-  x-moz-box-shadow: inset 0px 5px 12px rgba(68, 68, 68, 0.2);
-  x-webkit-box-shadow: 0px 5px 12px rgba(68, 68, 68, 0.2);
-  xbox-shadow: 0px 5px 12px rgba(68, 68, 68, 0.2);
   border-left: solid 2px rgba(238, 129, 34, 0.15); }
 
 .schedule-table tr.table-row {
@@ -8880,7 +8864,6 @@ tfoot {
   background: url("../img/back_themes.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  xbackground-attachment: fixed;
   color: #000012;
   -webkit-box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.35);
   box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.35); }
