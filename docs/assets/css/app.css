@@ -9231,3 +9231,20 @@ box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);}
 box-shadow: inset 0px 1px 4px 1px rgba(0,0,0,0.33);
 }
 /*modal end */
+/* registration closed */
+
+.register-closed, .register-closed:hover, .register-closed:focus {
+  background:#3b3b3b;
+  color:#8a8a8a;
+  transform: scale(1) !important;
+  cursor:default;
+}
+#mobile-nav a.register-closed, #mobile-nav a.register-closed:hover, #mobile-nav a.register-closed:focus {
+  background:#3b3b3b;
+  color:#8a8a8a;
+  transform: scale(1) !important;
+  cursor:default;
+}
+#menu-nav-container .sticky {
+  cursor: default;
+}
