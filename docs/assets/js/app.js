@@ -1,148 +1,66 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
-/******/ })
-/************************************************************************/
-/******/ ({
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/foundation-sites/dist/js/foundation.esm.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/foundation-sites/dist/js/foundation.esm.js ***!
   \*****************************************************************/
-/*! exports provided: default, Abide, Accordion, AccordionMenu, Box, Core, CoreUtils, Drilldown, Dropdown, DropdownMenu, Equalizer, Foundation, Interchange, Keyboard, Magellan, MediaQuery, Motion, Move, Nest, OffCanvas, Orbit, ResponsiveAccordionTabs, ResponsiveMenu, ResponsiveToggle, Reveal, Slider, SmoothScroll, Sticky, Tabs, Timer, Toggler, Tooltip, Touch, Triggers, onImagesLoaded */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Abide", function() { return Abide; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Accordion", function() { return Accordion; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccordionMenu", function() { return AccordionMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Box", function() { return Box; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Core", function() { return Foundation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoreUtils", function() { return foundation_core_utils; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Drilldown", function() { return Drilldown; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Dropdown", function() { return Dropdown; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DropdownMenu", function() { return DropdownMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Equalizer", function() { return Equalizer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Foundation", function() { return Foundation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Interchange", function() { return Interchange; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Keyboard", function() { return Keyboard; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Magellan", function() { return Magellan; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaQuery", function() { return MediaQuery; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Motion", function() { return Motion; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Move", function() { return Move; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Nest", function() { return Nest; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OffCanvas", function() { return OffCanvas; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Orbit", function() { return Orbit; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResponsiveAccordionTabs", function() { return ResponsiveAccordionTabs; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResponsiveMenu", function() { return ResponsiveMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResponsiveToggle", function() { return ResponsiveToggle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Reveal", function() { return Reveal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slider", function() { return Slider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmoothScroll", function() { return SmoothScroll; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sticky", function() { return Sticky; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Tabs", function() { return Tabs; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Timer", function() { return Timer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Toggler", function() { return Toggler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Tooltip", function() { return Tooltip; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Touch", function() { return Touch; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Triggers", function() { return Triggers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onImagesLoaded", function() { return onImagesLoaded; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Abide": function() { return /* binding */ Abide; },
+/* harmony export */   "Accordion": function() { return /* binding */ Accordion; },
+/* harmony export */   "AccordionMenu": function() { return /* binding */ AccordionMenu; },
+/* harmony export */   "Box": function() { return /* binding */ Box; },
+/* harmony export */   "Core": function() { return /* binding */ Foundation; },
+/* harmony export */   "CoreUtils": function() { return /* binding */ foundation_core_utils; },
+/* harmony export */   "Drilldown": function() { return /* binding */ Drilldown; },
+/* harmony export */   "Dropdown": function() { return /* binding */ Dropdown; },
+/* harmony export */   "DropdownMenu": function() { return /* binding */ DropdownMenu; },
+/* harmony export */   "Equalizer": function() { return /* binding */ Equalizer; },
+/* harmony export */   "Foundation": function() { return /* binding */ Foundation; },
+/* harmony export */   "Interchange": function() { return /* binding */ Interchange; },
+/* harmony export */   "Keyboard": function() { return /* binding */ Keyboard; },
+/* harmony export */   "Magellan": function() { return /* binding */ Magellan; },
+/* harmony export */   "MediaQuery": function() { return /* binding */ MediaQuery; },
+/* harmony export */   "Motion": function() { return /* binding */ Motion; },
+/* harmony export */   "Move": function() { return /* binding */ Move; },
+/* harmony export */   "Nest": function() { return /* binding */ Nest; },
+/* harmony export */   "OffCanvas": function() { return /* binding */ OffCanvas; },
+/* harmony export */   "Orbit": function() { return /* binding */ Orbit; },
+/* harmony export */   "ResponsiveAccordionTabs": function() { return /* binding */ ResponsiveAccordionTabs; },
+/* harmony export */   "ResponsiveMenu": function() { return /* binding */ ResponsiveMenu; },
+/* harmony export */   "ResponsiveToggle": function() { return /* binding */ ResponsiveToggle; },
+/* harmony export */   "Reveal": function() { return /* binding */ Reveal; },
+/* harmony export */   "Slider": function() { return /* binding */ Slider; },
+/* harmony export */   "SmoothScroll": function() { return /* binding */ SmoothScroll; },
+/* harmony export */   "Sticky": function() { return /* binding */ Sticky; },
+/* harmony export */   "Tabs": function() { return /* binding */ Tabs; },
+/* harmony export */   "Timer": function() { return /* binding */ Timer; },
+/* harmony export */   "Toggler": function() { return /* binding */ Toggler; },
+/* harmony export */   "Tooltip": function() { return /* binding */ Tooltip; },
+/* harmony export */   "Touch": function() { return /* binding */ Touch; },
+/* harmony export */   "Triggers": function() { return /* binding */ Triggers; },
+/* harmony export */   "onImagesLoaded": function() { return /* binding */ onImagesLoaded; }
+/* harmony export */ });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 
 
 function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
     _typeof = function _typeof(obj) {
-      return _typeof2(obj);
+      return typeof obj;
     };
   } else {
     _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
@@ -202,6 +120,19 @@ function _setPrototypeOf(o, p) {
   return _setPrototypeOf(o, p);
 }
 
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -213,9 +144,30 @@ function _assertThisInitialized(self) {
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof2(call) === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized(self);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function _createSuperInternal() {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
 }
 
 function _superPropBase(object, property) {
@@ -249,7 +201,7 @@ function _get(target, property, receiver) {
 }
 
 function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
 
 function _arrayWithHoles(arr) {
@@ -257,13 +209,17 @@ function _arrayWithHoles(arr) {
 }
 
 function _iterableToArrayLimit(arr, i) {
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -282,8 +238,27 @@ function _iterableToArrayLimit(arr, i) {
   return _arr;
 }
 
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
 function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 /**
  * Returns a boolean for RTL support
@@ -444,9 +419,8 @@ function ignoreMousedisappear(handler) {
   };
 }
 
-var foundation_core_utils =
-/*#__PURE__*/
-Object.freeze({
+var foundation_core_utils = /*#__PURE__*/Object.freeze({
+  __proto__: null,
   rtl: rtl,
   GetYoDigits: GetYoDigits,
   RegExpEscape: RegExpEscape,
@@ -521,7 +495,7 @@ var MediaQuery = {
     var $meta = jquery__WEBPACK_IMPORTED_MODULE_0___default()('meta.foundation-mq');
 
     if (!$meta.length) {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('<meta class="foundation-mq">').appendTo(document.head);
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('<meta class="foundation-mq" name="foundation-mq" content>').appendTo(document.head);
     }
 
     var extractedStyles = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.foundation-mq').css('font-family');
@@ -763,7 +737,7 @@ function parseStyleToObject(str) {
   return styleObject;
 }
 
-var FOUNDATION_VERSION = '6.6.3'; // Global Foundation object
+var FOUNDATION_VERSION = '6.7.3'; // Global Foundation object
 // This is attached to the window, or used as a module for AMD/Browserify
 
 var Foundation = {
@@ -861,7 +835,7 @@ var Foundation = {
    * @default If no argument is passed, reflow all currently active plugins.
    */
   reInit: function reInit(plugins) {
-    var isJQ = plugins instanceof jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
+    var isJQ = plugins instanceof (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 
     try {
       if (isJQ) {
@@ -907,13 +881,13 @@ var Foundation = {
       plugins = Object.keys(this._plugins);
     } // If plugins is a string, convert it to an array with one item
     else if (typeof plugins === 'string') {
-        plugins = [plugins];
-      }
+      plugins = [plugins];
+    }
 
     var _this = this; // Iterate through each plugin
 
 
-    jquery__WEBPACK_IMPORTED_MODULE_0___default.a.each(plugins, function (i, name) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default().each(plugins, function (i, name) {
       // Get the current plugin
       var plugin = _this._plugins[name]; // Localize the search to all elements inside elem, as well as elem itself, unless elem === document
 
@@ -1120,18 +1094,17 @@ var Box = {
   OverlapArea: OverlapArea,
   GetDimensions: GetDimensions,
   GetExplicitOffsets: GetExplicitOffsets
-  /**
-   * Compares the dimensions of an element to a container and determines collision events with container.
-   * @function
-   * @param {jQuery} element - jQuery object to test for collisions.
-   * @param {jQuery} parent - jQuery object to use as bounding container.
-   * @param {Boolean} lrOnly - set to true to check left and right values only.
-   * @param {Boolean} tbOnly - set to true to check top and bottom values only.
-   * @default if no parent object passed, detects collisions with `window`.
-   * @returns {Boolean} - true if collision free, false if a collision in any direction.
-   */
-
 };
+/**
+ * Compares the dimensions of an element to a container and determines collision events with container.
+ * @function
+ * @param {jQuery} element - jQuery object to test for collisions.
+ * @param {jQuery} parent - jQuery object to use as bounding container.
+ * @param {Boolean} lrOnly - set to true to check left and right values only.
+ * @param {Boolean} tbOnly - set to true to check top and bottom values only.
+ * @default if no parent object passed, detects collisions with `window`.
+ * @returns {Boolean} - true if collision free, false if a collision in any direction.
+ */
 
 function ImNotTouchingYou(element, parent, lrOnly, tbOnly, ignoreBottom) {
   return OverlapArea(element, parent, lrOnly, tbOnly, ignoreBottom) === 0;
@@ -1380,6 +1353,37 @@ function findFocusable($element) {
 
 
     return true;
+  }).sort(function (a, b) {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(a).attr('tabindex') == jquery__WEBPACK_IMPORTED_MODULE_0___default()(b).attr('tabindex')) {
+      return 0;
+    }
+
+    var aTabIndex = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()(a).attr('tabindex')),
+        bTabIndex = parseInt(jquery__WEBPACK_IMPORTED_MODULE_0___default()(b).attr('tabindex')); // Undefined is treated the same as 0
+
+    if (typeof jquery__WEBPACK_IMPORTED_MODULE_0___default()(a).attr('tabindex') == 'undefined' && bTabIndex > 0) {
+      return 1;
+    }
+
+    if (typeof jquery__WEBPACK_IMPORTED_MODULE_0___default()(b).attr('tabindex') == 'undefined' && aTabIndex > 0) {
+      return -1;
+    }
+
+    if (aTabIndex == 0 && bTabIndex > 0) {
+      return 1;
+    }
+
+    if (bTabIndex == 0 && aTabIndex > 0) {
+      return -1;
+    }
+
+    if (aTabIndex < bTabIndex) {
+      return -1;
+    }
+
+    if (aTabIndex > bTabIndex) {
+      return 1;
+    }
   });
 }
 
@@ -1426,7 +1430,7 @@ var Keyboard = {
       cmds = commandList; // use plain list
     } else {
       // merge ltr and rtl: if document is rtl, rtl overwrites ltr and vice versa
-      if (rtl()) cmds = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, commandList.ltr, commandList.rtl);else cmds = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, commandList.rtl, commandList.ltr);
+      if (rtl()) cmds = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, commandList.ltr, commandList.rtl);else cmds = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, commandList.rtl, commandList.ltr);
     }
 
     command = cmds[keyCode];
@@ -1621,7 +1625,7 @@ var Nest = {
         $item.addClass(hasSubClass);
 
         if (applyAria) {
-          $item.attr({
+          $item.children('a:first').attr({
             'aria-haspopup': true,
             'aria-label': $item.children('a:first').text()
           }); // Note:  Drilldowns behave differently in how they hide, and so need
@@ -1724,7 +1728,7 @@ function onTouchEnd(e) {
   this.removeEventListener('touchend', onTouchEnd); // If the touch did not move, consider it as a "tap"
 
   if (!didMoved) {
-    var tapEvent = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.Event('tap', startEvent || e);
+    var tapEvent = jquery__WEBPACK_IMPORTED_MODULE_0___default().Event('tap', startEvent || e);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).trigger(tapEvent);
   }
 
@@ -1734,19 +1738,20 @@ function onTouchEnd(e) {
 }
 
 function onTouchMove(e) {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default.a.spotSwipe.preventDefault) {
+  if (true === (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.preventDefault)) {
     e.preventDefault();
   }
 
   if (isMoving) {
-    var x = e.touches[0].pageX;
-    var y = e.touches[0].pageY;
-    var dx = startPosX - x;
+    var x = e.touches[0].pageX; // var y = e.touches[0].pageY;
+
+    var dx = startPosX - x; // var dy = startPosY - y;
+
     var dir;
     didMoved = true;
     elapsedTime = new Date().getTime() - startTime;
 
-    if (Math.abs(dx) >= jquery__WEBPACK_IMPORTED_MODULE_0___default.a.spotSwipe.moveThreshold && elapsedTime <= jquery__WEBPACK_IMPORTED_MODULE_0___default.a.spotSwipe.timeThreshold) {
+    if (Math.abs(dx) >= (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.moveThreshold) && elapsedTime <= (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.timeThreshold)) {
       dir = dx > 0 ? 'left' : 'right';
     } // else if(Math.abs(dy) >= $.spotSwipe.moveThreshold && elapsedTime <= $.spotSwipe.timeThreshold) {
     //   dir = dy > 0 ? 'down' : 'up';
@@ -1756,31 +1761,33 @@ function onTouchMove(e) {
     if (dir) {
       e.preventDefault();
       onTouchEnd.apply(this, arguments);
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).trigger(jquery__WEBPACK_IMPORTED_MODULE_0___default.a.Event('swipe', Object.assign({}, e)), dir).trigger(jquery__WEBPACK_IMPORTED_MODULE_0___default.a.Event("swipe".concat(dir), Object.assign({}, e)));
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).trigger(jquery__WEBPACK_IMPORTED_MODULE_0___default().Event('swipe', Object.assign({}, e)), dir).trigger(jquery__WEBPACK_IMPORTED_MODULE_0___default().Event("swipe".concat(dir), Object.assign({}, e)));
     }
   }
 }
 
 function onTouchStart(e) {
-  if (e.touches.length == 1) {
+  if (e.touches.length === 1) {
     startPosX = e.touches[0].pageX;
     startPosY = e.touches[0].pageY;
     startEvent = e;
     isMoving = true;
     didMoved = false;
     startTime = new Date().getTime();
-    this.addEventListener('touchmove', onTouchMove, false);
+    this.addEventListener('touchmove', onTouchMove, {
+      passive: true === (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.preventDefault)
+    });
     this.addEventListener('touchend', onTouchEnd, false);
   }
 }
 
 function init() {
-  this.addEventListener && this.addEventListener('touchstart', onTouchStart, false);
+  this.addEventListener && this.addEventListener('touchstart', onTouchStart, {
+    passive: true
+  });
 }
 
-var SpotSwipe =
-/*#__PURE__*/
-function () {
+var SpotSwipe = /*#__PURE__*/function () {
   function SpotSwipe($) {
     _classCallCheck(this, SpotSwipe);
 
@@ -2009,9 +2016,8 @@ Triggers.Listeners.Global = {
 
       _this.triggerHandler('close.zf.trigger', [_this]);
     });
-  } // Global, parses whole document.
-
-};
+  }
+}; // Global, parses whole document.
 
 Triggers.Initializers.addClosemeListener = function (pluginName) {
   var yetiBoxes = jquery__WEBPACK_IMPORTED_MODULE_0___default()('[data-yeti-box]'),
@@ -2153,9 +2159,7 @@ Triggers.init = function ($, Foundation) {
 // {function} _destroy (replaces previous destroy)
 
 
-var Plugin =
-/*#__PURE__*/
-function () {
+var Plugin = /*#__PURE__*/function () {
   function Plugin(element, options) {
     _classCallCheck(this, Plugin);
 
@@ -2217,20 +2221,20 @@ function getPluginName(obj) {
  */
 
 
-var Abide =
-/*#__PURE__*/
-function (_Plugin) {
+var Abide = /*#__PURE__*/function (_Plugin) {
   _inherits(Abide, _Plugin);
+
+  var _super = _createSuper(Abide);
 
   function Abide() {
     _classCallCheck(this, Abide);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Abide).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Abide, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Abide.
      * @class
@@ -2239,10 +2243,10 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to add the trigger to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element) {
+    function _setup(element) {
       var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(true, {}, Abide.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(true, {}, Abide.defaults, this.$element.data(), options);
       this.isEnabled = true;
       this.formnovalidate = null;
       this.className = 'Abide'; // ie9 back compat
@@ -2259,7 +2263,7 @@ function (_Plugin) {
     value: function _init() {
       var _this2 = this;
 
-      this.$inputs = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.merge( // Consider as input to validate:
+      this.$inputs = jquery__WEBPACK_IMPORTED_MODULE_0___default().merge( // Consider as input to validate:
       this.$element.find('input').not('[type="submit"]'), // * all input fields expect submit
       this.$element.find('textarea, select') // * all textareas and select fields
       );
@@ -2660,8 +2664,8 @@ function (_Plugin) {
         return this.removeRadioErrorClasses($el.attr('name'));
       } // checkboxes need to clear all of the els
       else if ($el[0].type == 'checkbox') {
-          return this.removeCheckboxErrorClasses($el.attr('name'));
-        }
+        return this.removeCheckboxErrorClasses($el.attr('name'));
+      }
 
       var $label = this.findLabel($el);
       var $formError = this.findFormError($el);
@@ -2759,10 +2763,10 @@ function (_Plugin) {
       }
 
       if (manageErrorClasses) {
-        this.removeErrorClasses($el);
-
         if (!goodToGo) {
           this.addErrorClasses($el, failedValidators);
+        } else {
+          this.removeErrorClasses($el);
         }
       }
       /**
@@ -2852,8 +2856,8 @@ function (_Plugin) {
           valid = this.options.patterns[pattern].test(inputText);
         } // If the pattern name isn't also the type attribute of the field, then test it as a regexp
         else if (pattern !== $el.attr('type')) {
-            valid = new RegExp(pattern).test(inputText);
-          }
+          valid = new RegExp(pattern).test(inputText);
+        }
       }
 
       return valid;
@@ -3161,20 +3165,20 @@ Abide.defaults = {
  * @requires foundation.util.keyboard
  */
 
-var Accordion =
-/*#__PURE__*/
-function (_Plugin) {
+var Accordion = /*#__PURE__*/function (_Plugin) {
   _inherits(Accordion, _Plugin);
+
+  var _super = _createSuper(Accordion);
 
   function Accordion() {
     _classCallCheck(this, Accordion);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Accordion).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Accordion, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of an accordion.
      * @class
@@ -3183,9 +3187,9 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into an accordion.
      * @param {Object} options - a plain object with settings to override the default options.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Accordion.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Accordion.defaults, this.$element.data(), options);
       this.className = 'Accordion'; // ie9 back compat
 
       this._init();
@@ -3194,7 +3198,9 @@ function (_Plugin) {
         'ENTER': 'toggle',
         'SPACE': 'toggle',
         'ARROW_DOWN': 'next',
-        'ARROW_UP': 'previous'
+        'ARROW_UP': 'previous',
+        'HOME': 'first',
+        'END': 'last'
       });
     }
     /**
@@ -3208,11 +3214,7 @@ function (_Plugin) {
       var _this2 = this;
 
       this._isInitializing = true;
-      this.$element.attr('role', 'tablist');
       this.$tabs = this.$element.children('[data-accordion-item]');
-      this.$tabs.attr({
-        'role': 'presentation'
-      });
       this.$tabs.each(function (idx, el) {
         var $el = jquery__WEBPACK_IMPORTED_MODULE_0___default()(el),
             $content = $el.children('[data-tab-content]'),
@@ -3220,13 +3222,11 @@ function (_Plugin) {
             linkId = el.id ? "".concat(el.id, "-label") : "".concat(id, "-label");
         $el.find('a:first').attr({
           'aria-controls': id,
-          'role': 'tab',
           'id': linkId,
-          'aria-expanded': false,
-          'aria-selected': false
+          'aria-expanded': false
         });
         $content.attr({
-          'role': 'tabpanel',
+          'role': 'region',
           'aria-labelledby': linkId,
           'aria-hidden': true,
           'id': id
@@ -3266,8 +3266,8 @@ function (_Plugin) {
             }
           } // Otherwise, close everything
           else {
-              _this2._closeAllTabs();
-            } // Roll up a little to show the titles
+            _this2._closeAllTabs();
+          } // Roll up a little to show the titles
 
 
           if (_this2.options.deepLinkSmudge) {
@@ -3331,6 +3331,20 @@ function (_Plugin) {
               },
               previous: function previous() {
                 var $a = $elem.prev().find('a').focus();
+
+                if (!_this.options.multiExpand) {
+                  $a.trigger('click.zf.accordion');
+                }
+              },
+              first: function first() {
+                var $a = _this.$tabs.first().find('.accordion-title').focus();
+
+                if (!_this.options.multiExpand) {
+                  $a.trigger('click.zf.accordion');
+                }
+              },
+              last: function last() {
+                var $a = _this.$tabs.last().find('.accordion-title').focus();
 
                 if (!_this.options.multiExpand) {
                   $a.trigger('click.zf.accordion');
@@ -3460,8 +3474,7 @@ function (_Plugin) {
       $target.attr('aria-hidden', false);
       $targetItem.addClass('is-active');
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#".concat(targetContentId)).attr({
-        'aria-expanded': true,
-        'aria-selected': true
+        'aria-expanded': true
       });
       $target.finish().slideDown(this.options.slideSpeed, function () {
         /**
@@ -3489,8 +3502,7 @@ function (_Plugin) {
       $target.attr('aria-hidden', true);
       $targetItem.removeClass('is-active');
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#".concat(targetContentId)).attr({
-        'aria-expanded': false,
-        'aria-selected': false
+        'aria-expanded': false
       });
       $target.finish().slideUp(this.options.slideSpeed, function () {
         /**
@@ -3610,20 +3622,20 @@ Accordion.defaults = {
  * @requires foundation.util.nest
  */
 
-var AccordionMenu =
-/*#__PURE__*/
-function (_Plugin) {
+var AccordionMenu = /*#__PURE__*/function (_Plugin) {
   _inherits(AccordionMenu, _Plugin);
+
+  var _super = _createSuper(AccordionMenu);
 
   function AccordionMenu() {
     _classCallCheck(this, AccordionMenu);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(AccordionMenu).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(AccordionMenu, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of an accordion menu.
      * @class
@@ -3632,9 +3644,9 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into an accordion menu.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, AccordionMenu.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, AccordionMenu.defaults, this.$element.data(), options);
       this.className = 'AccordionMenu'; // ie9 back compat
 
       this._init();
@@ -3664,7 +3676,6 @@ function (_Plugin) {
       this.$element.find('[data-submenu]').not('.is-active').slideUp(0); //.find('a').css('padding-left', '1rem');
 
       this.$element.attr({
-        'role': 'tree',
         'aria-multiselectable': this.options.multiOpen
       });
       this.$menuLinks = this.$element.find('.is-accordion-submenu-parent');
@@ -3697,9 +3708,6 @@ function (_Plugin) {
           'role': 'group',
           'id': subId
         });
-      });
-      this.$element.find('li').attr({
-        'role': 'treeitem'
       });
       var initPanes = this.$element.find('.is-active');
 
@@ -4000,20 +4008,20 @@ AccordionMenu.defaults = {
  * @requires foundation.util.box
  */
 
-var Drilldown =
-/*#__PURE__*/
-function (_Plugin) {
+var Drilldown = /*#__PURE__*/function (_Plugin) {
   _inherits(Drilldown, _Plugin);
+
+  var _super = _createSuper(Drilldown);
 
   function Drilldown() {
     _classCallCheck(this, Drilldown);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Drilldown).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Drilldown, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of a drilldown menu.
      * @class
@@ -4021,9 +4029,9 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into an accordion menu.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Drilldown.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Drilldown.defaults, this.$element.data(), options);
       this.className = 'Drilldown'; // ie9 back compat
 
       this._init();
@@ -4035,9 +4043,7 @@ function (_Plugin) {
         'ARROW_UP': 'up',
         'ARROW_DOWN': 'down',
         'ARROW_LEFT': 'previous',
-        'ESCAPE': 'close',
-        'TAB': 'down',
-        'SHIFT_TAB': 'up'
+        'ESCAPE': 'close'
       });
     }
     /**
@@ -4055,12 +4061,11 @@ function (_Plugin) {
       }
 
       this.$element.attr({
-        'role': 'tree',
         'aria-multiselectable': false
       });
       this.$submenuAnchors = this.$element.find('li.is-drilldown-submenu-parent').children('a');
       this.$submenus = this.$submenuAnchors.parent('li').children('[data-submenu]').attr('role', 'group');
-      this.$menuItems = this.$element.find('li').not('.js-drilldown-back').attr('role', 'treeitem').find('a'); // Set the main menu as current by default (unless a submenu is selected)
+      this.$menuItems = this.$element.find('li').not('.js-drilldown-back').find('a'); // Set the main menu as current by default (unless a submenu is selected)
       // Used to set the wrapper height when the drilldown is closed/reopened from any (sub)menu
 
       this.$currentMenu = this.$element;
@@ -4178,7 +4183,7 @@ function (_Plugin) {
         if (_this.options.closeOnClick) {
           var $body = jquery__WEBPACK_IMPORTED_MODULE_0___default()('body');
           $body.off('.zf.drilldown').on('click.zf.drilldown', function (e) {
-            if (e.target === _this.$element[0] || jquery__WEBPACK_IMPORTED_MODULE_0___default.a.contains(_this.$element[0], e.target)) {
+            if (e.target === _this.$element[0] || jquery__WEBPACK_IMPORTED_MODULE_0___default().contains(_this.$element[0], e.target)) {
               return;
             }
 
@@ -4383,6 +4388,8 @@ function (_Plugin) {
 
         if (parentSubMenu.length) {
           _this._show(parentSubMenu);
+        } else {
+          _this.$currentMenu = _this.$element;
         }
       });
     }
@@ -4462,7 +4469,7 @@ function (_Plugin) {
       this.$currentMenu = $elem; // If target menu is root, focus first link & exit
 
       if ($elem.is('[data-drilldown]')) {
-        if (autoFocus === true) $elem.find('li[role="treeitem"] > a').first().focus();
+        if (autoFocus === true) $elem.find('li > a').first().focus();
         if (this.options.autoHeight) this.$wrapper.css('height', $elem.data('calcHeight'));
         return;
       } // Find all submenus on way to root incl. the element itself
@@ -4482,7 +4489,7 @@ function (_Plugin) {
         if (isLastChild === true) {
           jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).one(transitionend(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this)), function () {
             if (autoFocus === true) {
-              $elem.find('li[role="treeitem"] > a').first().focus();
+              $elem.find('li > a').first().focus();
             }
           });
         }
@@ -4502,8 +4509,12 @@ function (_Plugin) {
     value: function _show($elem) {
       var $submenu = $elem.children('[data-submenu]');
       $elem.attr('aria-expanded', true);
-      this.$currentMenu = $submenu;
-      $submenu.addClass('is-active').removeClass('invisible').attr('aria-hidden', false);
+      this.$currentMenu = $submenu; //hide drilldown parent menu when submenu is open
+      // this removes it from the dom so that the tab key will take the user to the next visible element
+
+      $elem.parent().closest('ul').addClass('invisible'); // add visible class to submenu to override invisible class above
+
+      $submenu.addClass('is-active visible').removeClass('invisible').attr('aria-hidden', false);
 
       if (this.options.autoHeight) {
         this.$wrapper.css({
@@ -4531,10 +4542,11 @@ function (_Plugin) {
       if (this.options.autoHeight) this.$wrapper.css({
         height: $elem.parent().closest('ul').data('calcHeight')
       });
+      $elem.parent().closest('ul').removeClass('invisible');
       $elem.parent('li').attr('aria-expanded', false);
       $elem.attr('aria-hidden', true);
       $elem.addClass('is-closing').one(transitionend($elem), function () {
-        $elem.removeClass('is-active is-closing');
+        $elem.removeClass('is-active is-closing visible');
         $elem.blur().addClass('invisible');
       });
       /**
@@ -4580,13 +4592,14 @@ function (_Plugin) {
   }, {
     key: "_destroy",
     value: function _destroy() {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').off('.zf.drilldown');
       if (this.options.scrollTop) this.$element.off('.zf.drilldown', this._bindHandler);
 
       this._hideAll();
 
       this.$element.off('mutateme.zf.trigger');
       Nest.Burn(this.$element, 'drilldown');
-      this.$element.unwrap().find('.js-drilldown-back, .is-submenu-parent-item').remove().end().find('.is-active, .is-closing, .is-drilldown-submenu').removeClass('is-active is-closing is-drilldown-submenu').end().find('[data-submenu]').removeAttr('aria-hidden tabindex role');
+      this.$element.unwrap().find('.js-drilldown-back, .is-submenu-parent-item').remove().end().find('.is-active, .is-closing, .is-drilldown-submenu').removeClass('is-active is-closing is-drilldown-submenu').off('transitionend otransitionend webkitTransitionEnd').end().find('[data-submenu]').removeAttr('aria-hidden tabindex role');
       this.$submenuAnchors.each(function () {
         jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).off('.zf.drilldown');
       });
@@ -4736,20 +4749,20 @@ function nextItem(item, array) {
   }
 }
 
-var Positionable =
-/*#__PURE__*/
-function (_Plugin) {
+var Positionable = /*#__PURE__*/function (_Plugin) {
   _inherits(Positionable, _Plugin);
+
+  var _super = _createSuper(Positionable);
 
   function Positionable() {
     _classCallCheck(this, Positionable);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Positionable).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Positionable, [{
     key: "_init",
-
+    value:
     /**
      * Abstract class encapsulating the tether-like explicit positioning logic
      * including repositioning based on overlap.
@@ -4759,7 +4772,7 @@ function (_Plugin) {
      * generated) by explicitly declaring them.
      *
      **/
-    value: function _init() {
+    function _init() {
       this.triedPositions = {};
       this.position = this.options.position === 'auto' ? this._getDefaultPosition() : this.options.position;
       this.alignment = this.options.alignment === 'auto' ? this._getDefaultAlignment() : this.options.alignment;
@@ -4970,20 +4983,20 @@ Positionable.defaults = {
  * @requires foundation.util.triggers
  */
 
-var Dropdown =
-/*#__PURE__*/
-function (_Positionable) {
+var Dropdown = /*#__PURE__*/function (_Positionable) {
   _inherits(Dropdown, _Positionable);
+
+  var _super = _createSuper(Dropdown);
 
   function Dropdown() {
     _classCallCheck(this, Dropdown);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Dropdown).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Dropdown, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of a dropdown.
      * @class
@@ -4992,14 +5005,14 @@ function (_Positionable) {
      *        Object should be of the dropdown panel, rather than its anchor.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Dropdown.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Dropdown.defaults, this.$element.data(), options);
       this.className = 'Dropdown'; // ie9 back compat
       // Touch and Triggers init are idempotent, just need to make sure they are initialized
 
-      Touch.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Touch.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
 
@@ -5131,9 +5144,7 @@ function (_Positionable) {
         _this._setCurrentAnchor(this);
 
         if ( // if forceFollow false, always prevent default action
-        _this.options.forceFollow === false || // if forceFollow true and hover option true, only prevent default action on 1st click
-        // on 2nd click (dropown opened) the default action (e.g. follow a href) gets executed
-        hasTouch && _this.options.hover && _this.$element.hasClass('is-open') === false) {
+        _this.options.forceFollow === false || hasTouch && _this.options.hover && _this.$element.hasClass('is-open') === false) {
           e.preventDefault();
         }
       });
@@ -5458,20 +5469,20 @@ Dropdown.defaults = {
  * @requires foundation.util.touch
  */
 
-var DropdownMenu =
-/*#__PURE__*/
-function (_Plugin) {
+var DropdownMenu = /*#__PURE__*/function (_Plugin) {
   _inherits(DropdownMenu, _Plugin);
+
+  var _super = _createSuper(DropdownMenu);
 
   function DropdownMenu() {
     _classCallCheck(this, DropdownMenu);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(DropdownMenu).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(DropdownMenu, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of DropdownMenu.
      * @class
@@ -5480,12 +5491,12 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into a dropdown menu.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, DropdownMenu.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, DropdownMenu.defaults, this.$element.data(), options);
       this.className = 'DropdownMenu'; // ie9 back compat
 
-      Touch.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a); // Touch init is idempotent, we just need to make sure it's initialied.
+      Touch.init((jquery__WEBPACK_IMPORTED_MODULE_0___default())); // Touch init is idempotent, we just need to make sure it's initialied.
 
       this._init();
 
@@ -5602,6 +5613,8 @@ function (_Plugin) {
         });
       }
 
+      if (hasTouch && this.options.disableHoverOnTouch) this.options.disableHover = true;
+
       if (!this.options.disableHover) {
         this.$menuItems.on('mouseenter.zf.dropdownMenu', function (e) {
           var $elem = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this),
@@ -5691,7 +5704,7 @@ function (_Plugin) {
             // vertical menu
             if (_this._isRtl()) {
               // right aligned
-              jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(functions, {
+              jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(functions, {
                 down: nextSibling,
                 up: prevSibling,
                 next: closeSub,
@@ -5699,7 +5712,7 @@ function (_Plugin) {
               });
             } else {
               // left aligned
-              jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(functions, {
+              jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(functions, {
                 down: nextSibling,
                 up: prevSibling,
                 next: openSub,
@@ -5710,7 +5723,7 @@ function (_Plugin) {
             // horizontal menu
             if (_this._isRtl()) {
               // right aligned
-              jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(functions, {
+              jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(functions, {
                 next: prevSibling,
                 previous: nextSibling,
                 down: openSub,
@@ -5718,7 +5731,7 @@ function (_Plugin) {
               });
             } else {
               // left aligned
-              jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(functions, {
+              jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(functions, {
                 next: nextSibling,
                 previous: prevSibling,
                 down: openSub,
@@ -5730,7 +5743,7 @@ function (_Plugin) {
           // not tabs -> one sub
           if (_this._isRtl()) {
             // right aligned
-            jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(functions, {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(functions, {
               next: closeSub,
               previous: openSub,
               down: nextSibling,
@@ -5738,7 +5751,7 @@ function (_Plugin) {
             });
           } else {
             // left aligned
-            jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend(functions, {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default().extend(functions, {
               next: openSub,
               previous: closeSub,
               down: nextSibling,
@@ -5914,6 +5927,14 @@ DropdownMenu.defaults = {
   disableHover: false,
 
   /**
+   * Disallows hover on touch devices
+   * @option
+   * @type {boolean}
+   * @default true
+   */
+  disableHoverOnTouch: true,
+
+  /**
    * Allow a submenu to automatically close on a mouseleave event, if not clicked open.
    * @option
    * @type {boolean}
@@ -6000,20 +6021,20 @@ DropdownMenu.defaults = {
  * @requires foundation.util.imageLoader if equalizer contains images
  */
 
-var Equalizer =
-/*#__PURE__*/
-function (_Plugin) {
+var Equalizer = /*#__PURE__*/function (_Plugin) {
   _inherits(Equalizer, _Plugin);
+
+  var _super = _createSuper(Equalizer);
 
   function Equalizer() {
     _classCallCheck(this, Equalizer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Equalizer).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Equalizer, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Equalizer.
      * @class
@@ -6022,9 +6043,9 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to add the trigger to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Equalizer.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Equalizer.defaults, this.$element.data(), options);
       this.className = 'Equalizer'; // ie9 back compat
 
       this._init();
@@ -6384,20 +6405,20 @@ Equalizer.defaults = {
  * @requires foundation.util.mediaQuery
  */
 
-var Interchange =
-/*#__PURE__*/
-function (_Plugin) {
+var Interchange = /*#__PURE__*/function (_Plugin) {
   _inherits(Interchange, _Plugin);
+
+  var _super = _createSuper(Interchange);
 
   function Interchange() {
     _classCallCheck(this, Interchange);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Interchange).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Interchange, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Interchange.
      * @class
@@ -6406,15 +6427,15 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to add the trigger to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Interchange.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Interchange.defaults, this.$element.data(), options);
       this.rules = [];
       this.currentPath = '';
       this.className = 'Interchange'; // ie9 back compat
       // Triggers init is idempotent, just need to make sure it is initialized
 
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
 
@@ -6585,19 +6606,19 @@ function (_Plugin) {
         }).trigger(trigger);
       } // Replacing background images
       else if (type === 'background') {
-          path = path.replace(/\(/g, '%28').replace(/\)/g, '%29');
-          this.$element.css({
-            'background-image': 'url(' + path + ')'
-          }).trigger(trigger);
-        } // Replacing HTML
-        else if (type === 'html') {
-            jquery__WEBPACK_IMPORTED_MODULE_0___default.a.get(path, function (response) {
-              _this2.$element.html(response).trigger(trigger);
+        path = path.replace(/\(/g, '%28').replace(/\)/g, '%29');
+        this.$element.css({
+          'background-image': 'url(' + path + ')'
+        }).trigger(trigger);
+      } // Replacing HTML
+      else if (type === 'html') {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default().get(path, function (response) {
+          _this2.$element.html(response).trigger(trigger);
 
-              jquery__WEBPACK_IMPORTED_MODULE_0___default()(response).foundation();
-              _this2.currentPath = path;
-            });
-          }
+          jquery__WEBPACK_IMPORTED_MODULE_0___default()(response).foundation();
+          _this2.currentPath = path;
+        });
+      }
       /**
        * Fires when content in an Interchange element is done being loaded.
        * @event Interchange#replaced
@@ -6655,20 +6676,20 @@ Interchange.SPECIAL_QUERIES = {
  * @module foundation.smoothScroll
  */
 
-var SmoothScroll =
-/*#__PURE__*/
-function (_Plugin) {
+var SmoothScroll = /*#__PURE__*/function (_Plugin) {
   _inherits(SmoothScroll, _Plugin);
+
+  var _super = _createSuper(SmoothScroll);
 
   function SmoothScroll() {
     _classCallCheck(this, SmoothScroll);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SmoothScroll).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(SmoothScroll, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of SmoothScroll.
      * @class
@@ -6677,9 +6698,9 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to add the trigger to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, SmoothScroll.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, SmoothScroll.defaults, this.$element.data(), options);
       this.className = 'SmoothScroll'; // ie9 back compat
 
       this._init();
@@ -6734,18 +6755,18 @@ function (_Plugin) {
     }
   }, {
     key: "_destroy",
-
+    value:
     /**
      * Destroys the SmoothScroll instance.
      * @function
      */
-    value: function _destroy() {
+    function _destroy() {
       this.$element.off('click.zf.smoothScroll', this._linkClickListener);
       this.$element.off('click.zf.smoothScroll', 'a[href^="#"]', this._linkClickListener);
     }
   }], [{
     key: "scrollToLoc",
-
+    value:
     /**
      * Function to scroll to a given location on the page.
      * @param {String} loc - A properly formatted jQuery id selector. Example: '#foo'
@@ -6754,7 +6775,7 @@ function (_Plugin) {
      * @static
      * @function
      */
-    value: function scrollToLoc(loc) {
+    function scrollToLoc(loc) {
       var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : SmoothScroll.defaults;
       var callback = arguments.length > 2 ? arguments[2] : undefined;
       var $loc = jquery__WEBPACK_IMPORTED_MODULE_0___default()(loc); // Do nothing if target does not exist to prevent errors
@@ -6819,20 +6840,20 @@ SmoothScroll.defaults = {
  * @requires foundation.util.triggers
  */
 
-var Magellan =
-/*#__PURE__*/
-function (_Plugin) {
+var Magellan = /*#__PURE__*/function (_Plugin) {
   _inherits(Magellan, _Plugin);
+
+  var _super = _createSuper(Magellan);
 
   function Magellan() {
     _classCallCheck(this, Magellan);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Magellan).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Magellan, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Magellan.
      * @class
@@ -6841,13 +6862,13 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to add the trigger to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Magellan.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Magellan.defaults, this.$element.data(), options);
       this.className = 'Magellan'; // ie9 back compat
       // Triggers init is idempotent, just need to make sure it is initialized
 
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
 
@@ -6983,9 +7004,7 @@ function (_Plugin) {
 
   }, {
     key: "_updateActive",
-    value: function _updateActive()
-    /*evt, elem, scrollPos*/
-    {
+    value: function _updateActive() {
       var _this2 = this;
 
       if (this._inTransition) return;
@@ -6994,18 +7013,16 @@ function (_Plugin) {
       this.scrollPos = newScrollPos;
       var activeIdx; // Before the first point: no link
 
-      if (newScrollPos < this.points[0]) ;
-      /* do nothing */
-      // At the bottom of the page: last link
+      if (newScrollPos < this.points[0] - this.options.offset - (isScrollingUp ? this.options.threshold : 0)) ; // At the bottom of the page: last link
       else if (newScrollPos + this.winHeight === this.docHeight) {
-          activeIdx = this.points.length - 1;
-        } // Otherwhise, use the last visible link
-        else {
-            var visibleLinks = this.points.filter(function (p, i) {
-              return p - _this2.options.offset - (isScrollingUp ? _this2.options.threshold : 0) <= newScrollPos;
-            });
-            activeIdx = visibleLinks.length ? visibleLinks.length - 1 : 0;
-          } // Get the new active link
+        activeIdx = this.points.length - 1;
+      } // Otherwhise, use the last visible link
+      else {
+        var visibleLinks = this.points.filter(function (p, i) {
+          return p - _this2.options.offset - (isScrollingUp ? _this2.options.threshold : 0) <= newScrollPos;
+        });
+        activeIdx = visibleLinks.length ? visibleLinks.length - 1 : 0;
+      } // Get the new active link
 
       var $oldActive = this.$active;
       var activeHash = '';
@@ -7142,20 +7159,20 @@ Magellan.defaults = {
  * @requires foundation.util.triggers
  */
 
-var OffCanvas =
-/*#__PURE__*/
-function (_Plugin) {
+var OffCanvas = /*#__PURE__*/function (_Plugin) {
   _inherits(OffCanvas, _Plugin);
+
+  var _super = _createSuper(OffCanvas);
 
   function OffCanvas() {
     _classCallCheck(this, OffCanvas);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(OffCanvas).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(OffCanvas, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of an off-canvas wrapper.
      * @class
@@ -7164,13 +7181,13 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to initialize.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       var _this2 = this;
 
       this.className = 'OffCanvas'; // ie9 back compat
 
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, OffCanvas.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, OffCanvas.defaults, this.$element.data(), options);
       this.contentClasses = {
         base: [],
         reveal: []
@@ -7192,7 +7209,7 @@ function (_Plugin) {
         _this2.contentClasses.reveal.push('has-reveal-' + val);
       }); // Triggers init is idempotent, just need to make sure it is initialized
 
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       MediaQuery._init();
 
@@ -7497,75 +7514,76 @@ function (_Plugin) {
       return false;
     }
     /**
-     * Tag the element given as context whether it can be scrolled up and down.
-     * Used to allow or prevent it to scroll. See `_stopScrollPropagation`.
-     *
-     * Taken and adapted from http://stackoverflow.com/questions/16889447/prevent-full-page-scrolling-ios
-     * Only really works for y, not sure how to extend to x or if we need to.
-     *
-     * @function
+     * Save current finger y-position
+     * @param event
      * @private
      */
 
   }, {
     key: "_recordScrollable",
     value: function _recordScrollable(event) {
-      var elem = this; // called from event handler context with this as elem
-      // If the element is scrollable (content overflows), then...
-
-      if (elem.scrollHeight !== elem.clientHeight) {
-        // If we're at the top, scroll down one pixel to allow scrolling up
-        if (elem.scrollTop === 0) {
-          elem.scrollTop = 1;
-        } // If we're at the bottom, scroll up one pixel to allow scrolling down
-
-
-        if (elem.scrollTop === elem.scrollHeight - elem.clientHeight) {
-          elem.scrollTop = elem.scrollHeight - elem.clientHeight - 1;
-        }
-      }
-
-      elem.allowUp = elem.scrollTop > 0;
-      elem.allowDown = elem.scrollTop < elem.scrollHeight - elem.clientHeight;
-      elem.lastY = event.originalEvent.pageY;
+      var elem = this;
+      elem.lastY = event.touches[0].pageY;
     }
     /**
-     * Prevent the given event propagation if the element given as context can scroll.
-     * Used to preserve the element scrolling on mobile (`touchmove`) when the document
-     * scrolling is prevented. See https://git.io/zf-9707.
-     * @function
+     * Prevent further scrolling when it hits the edges
+     * @param event
      * @private
      */
 
   }, {
-    key: "_stopScrollPropagation",
-    value: function _stopScrollPropagation(event) {
-      var elem = this; // called from event handler context with this as elem
+    key: "_preventDefaultAtEdges",
+    value: function _preventDefaultAtEdges(event) {
+      var elem = this;
+      var _this = event.data;
+      var delta = elem.lastY - event.touches[0].pageY;
+      elem.lastY = event.touches[0].pageY;
 
-      var parent; // off-canvas elem if called from inner scrollbox
-
-      var up = event.pageY < elem.lastY;
-      var down = !up;
-      elem.lastY = event.pageY;
-
-      if (up && elem.allowUp || down && elem.allowDown) {
-        // It is not recommended to stop event propagation (the user cannot watch it),
-        // but in this case this is the only solution we have.
-        event.stopPropagation(); // If elem is inner scrollbox we are scrolling the outer off-canvas down/up once the box end has been reached
-        // This lets the user continue to touch move the off-canvas without the need to place the finger outside the scrollbox
-
-        if (elem.hasAttribute('data-off-canvas-scrollbox')) {
-          parent = elem.closest('[data-off-canvas], [data-off-canvas-scrollbox-outer]');
-
-          if (elem.scrollTop <= 1 && parent.scrollTop > 0) {
-            parent.scrollTop--;
-          } else if (elem.scrollTop >= elem.scrollHeight - elem.clientHeight - 1 && parent.scrollTop < parent.scrollHeight - parent.clientHeight) {
-            parent.scrollTop++;
-          }
-        }
-      } else {
+      if (!_this._canScroll(delta, elem)) {
         event.preventDefault();
       }
+    }
+    /**
+     * Handle continuous scrolling of scrollbox
+     * Don't bubble up to _preventDefaultAtEdges
+     * @param event
+     * @private
+     */
+
+  }, {
+    key: "_scrollboxTouchMoved",
+    value: function _scrollboxTouchMoved(event) {
+      var elem = this;
+      var _this = event.data;
+      var parent = elem.closest('[data-off-canvas], [data-off-canvas-scrollbox-outer]');
+      var delta = elem.lastY - event.touches[0].pageY;
+      parent.lastY = elem.lastY = event.touches[0].pageY;
+      event.stopPropagation();
+
+      if (!_this._canScroll(delta, elem)) {
+        if (!_this._canScroll(delta, parent)) {
+          event.preventDefault();
+        } else {
+          parent.scrollTop += delta;
+        }
+      }
+    }
+    /**
+     * Detect possibility of scrolling
+     * @param delta
+     * @param elem
+     * @returns boolean
+     * @private
+     */
+
+  }, {
+    key: "_canScroll",
+    value: function _canScroll(delta, elem) {
+      var up = delta < 0;
+      var down = delta > 0;
+      var allowUp = elem.scrollTop > 0;
+      var allowDown = elem.scrollTop < elem.scrollHeight - elem.clientHeight;
+      return up && allowUp || down && allowDown;
     }
     /**
      * Opens the off-canvas menu.
@@ -7611,9 +7629,9 @@ function (_Plugin) {
       if (this.options.contentScroll === false) {
         jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').addClass('is-off-canvas-open').on('touchmove', this._stopScrolling);
         this.$element.on('touchstart', this._recordScrollable);
-        this.$element.on('touchmove', this._stopScrollPropagation);
+        this.$element.on('touchmove', this, this._preventDefaultAtEdges);
         this.$element.on('touchstart', '[data-off-canvas-scrollbox]', this._recordScrollable);
-        this.$element.on('touchmove', '[data-off-canvas-scrollbox]', this._stopScrollPropagation);
+        this.$element.on('touchmove', '[data-off-canvas-scrollbox]', this, this._scrollboxTouchMoved);
       }
 
       if (this.options.contentOverlay === true) {
@@ -7718,11 +7736,11 @@ function (_Plugin) {
 
           _this5.$element.off('touchstart', _this5._recordScrollable);
 
-          _this5.$element.off('touchmove', _this5._stopScrollPropagation);
+          _this5.$element.off('touchmove', _this5._preventDefaultAtEdges);
 
           _this5.$element.off('touchstart', '[data-off-canvas-scrollbox]', _this5._recordScrollable);
 
-          _this5.$element.off('touchmove', '[data-off-canvas-scrollbox]', _this5._stopScrollPropagation);
+          _this5.$element.off('touchmove', '[data-off-canvas-scrollbox]', _this5._scrollboxTouchMoved);
         }
 
         if (_this5.options.trapFocus === true) {
@@ -7921,20 +7939,20 @@ OffCanvas.defaults = {
  * @requires foundation.util.touch
  */
 
-var Orbit =
-/*#__PURE__*/
-function (_Plugin) {
+var Orbit = /*#__PURE__*/function (_Plugin) {
   _inherits(Orbit, _Plugin);
+
+  var _super = _createSuper(Orbit);
 
   function Orbit() {
     _classCallCheck(this, Orbit);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Orbit).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Orbit, [{
     key: "_setup",
-
+    value:
     /**
     * Creates a new instance of an orbit carousel.
     * @class
@@ -7942,12 +7960,12 @@ function (_Plugin) {
     * @param {jQuery} element - jQuery object to make into an Orbit Carousel.
     * @param {Object} options - Overrides to the default plugin settings.
     */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Orbit.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Orbit.defaults, this.$element.data(), options);
       this.className = 'Orbit'; // ie9 back compat
 
-      Touch.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a); // Touch init is idempotent, we just need to make sure it's initialied.
+      Touch.init((jquery__WEBPACK_IMPORTED_MODULE_0___default())); // Touch init is idempotent, we just need to make sure it's initialied.
 
       this._init();
 
@@ -8273,9 +8291,7 @@ function (_Plugin) {
 
       if (!chosenSlide) {
         //most of the time, this will be auto played or clicked from the navButtons.
-        $newSlide = isLTR ? //if wrapping enabled, check to see if there is a `next` or `prev` sibling, if not, select the first or last slide to fill in. if wrapping not enabled, attempt to select `next` or `prev`, if there's nothing there, the function will kick out on next step. CRAZY NESTED TERNARIES!!!!!
-        this.options.infiniteWrap ? $curSlide.next(".".concat(this.options.slideClass)).length ? $curSlide.next(".".concat(this.options.slideClass)) : $firstSlide : $curSlide.next(".".concat(this.options.slideClass)) : //pick next slide if moving left to right
-        this.options.infiniteWrap ? $curSlide.prev(".".concat(this.options.slideClass)).length ? $curSlide.prev(".".concat(this.options.slideClass)) : $lastSlide : $curSlide.prev(".".concat(this.options.slideClass)); //pick prev slide if moving right to left
+        $newSlide = isLTR ? this.options.infiniteWrap ? $curSlide.next(".".concat(this.options.slideClass)).length ? $curSlide.next(".".concat(this.options.slideClass)) : $firstSlide : $curSlide.next(".".concat(this.options.slideClass)) : this.options.infiniteWrap ? $curSlide.prev(".".concat(this.options.slideClass)).length ? $curSlide.prev(".".concat(this.options.slideClass)) : $lastSlide : $curSlide.prev(".".concat(this.options.slideClass)); //pick prev slide if moving right to left
       } else {
         $newSlide = chosenSlide;
       }
@@ -8548,20 +8564,20 @@ var MenuPlugins = {
  * @requires foundation.util.mediaQuery
  */
 
-var ResponsiveMenu =
-/*#__PURE__*/
-function (_Plugin) {
+var ResponsiveMenu = /*#__PURE__*/function (_Plugin) {
   _inherits(ResponsiveMenu, _Plugin);
+
+  var _super = _createSuper(ResponsiveMenu);
 
   function ResponsiveMenu() {
     _classCallCheck(this, ResponsiveMenu);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ResponsiveMenu).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(ResponsiveMenu, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of a responsive menu.
      * @class
@@ -8570,7 +8586,7 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into a dropdown menu.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = jquery__WEBPACK_IMPORTED_MODULE_0___default()(element);
       this.rules = this.$element.data('responsive-menu');
       this.currentMq = null;
@@ -8611,7 +8627,7 @@ function (_Plugin) {
         this.rules = rulesTree;
       }
 
-      if (!jquery__WEBPACK_IMPORTED_MODULE_0___default.a.isEmptyObject(this.rules)) {
+      if (!jquery__WEBPACK_IMPORTED_MODULE_0___default().isEmptyObject(this.rules)) {
         this._checkMediaQueries();
       } // Add data-mutate since children may need it.
 
@@ -8648,7 +8664,7 @@ function (_Plugin) {
           _this = this; // Iterate through each rule and find the last matching rule
 
 
-      jquery__WEBPACK_IMPORTED_MODULE_0___default.a.each(this.rules, function (key) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default().each(this.rules, function (key) {
         if (MediaQuery.atLeast(key)) {
           matchedMq = key;
         }
@@ -8658,7 +8674,7 @@ function (_Plugin) {
 
       if (this.currentPlugin instanceof this.rules[matchedMq].plugin) return; // Remove existing plugin-specific CSS classes
 
-      jquery__WEBPACK_IMPORTED_MODULE_0___default.a.each(MenuPlugins, function (key, value) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default().each(MenuPlugins, function (key, value) {
         _this.$element.removeClass(value.cssClass);
       }); // Add the CSS class for the new plugin
 
@@ -8691,20 +8707,20 @@ ResponsiveMenu.defaults = {};
  * @requires foundation.util.motion
  */
 
-var ResponsiveToggle =
-/*#__PURE__*/
-function (_Plugin) {
+var ResponsiveToggle = /*#__PURE__*/function (_Plugin) {
   _inherits(ResponsiveToggle, _Plugin);
+
+  var _super = _createSuper(ResponsiveToggle);
 
   function ResponsiveToggle() {
     _classCallCheck(this, ResponsiveToggle);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ResponsiveToggle).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(ResponsiveToggle, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Tab Bar.
      * @class
@@ -8713,9 +8729,9 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to attach tab bar functionality to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = jquery__WEBPACK_IMPORTED_MODULE_0___default()(element);
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, ResponsiveToggle.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, ResponsiveToggle.defaults, this.$element.data(), options);
       this.className = 'ResponsiveToggle'; // ie9 back compat
 
       this._init();
@@ -8744,7 +8760,7 @@ function (_Plugin) {
         var target = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).data('toggle');
         return target === targetID || target === "";
       });
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, this.options, this.$targetMenu.data()); // If they were set, parse the animation classes
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, this.options, this.$targetMenu.data()); // If they were set, parse the animation classes
 
       if (this.options.animate) {
         var input = this.options.animate.split(' ');
@@ -8782,9 +8798,9 @@ function (_Plugin) {
         this.$targetMenu.hide();
       } // Desktop
       else {
-          this.$element.hide();
-          this.$targetMenu.show();
-        }
+        this.$element.hide();
+        this.$targetMenu.show();
+      }
     }
     /**
      * Toggles the element attached to the tab bar. The toggle only happens if the screen is small enough to allow it.
@@ -8860,20 +8876,20 @@ ResponsiveToggle.defaults = {
  * @requires foundation.util.motion if using animations
  */
 
-var Reveal =
-/*#__PURE__*/
-function (_Plugin) {
+var Reveal = /*#__PURE__*/function (_Plugin) {
   _inherits(Reveal, _Plugin);
+
+  var _super = _createSuper(Reveal);
 
   function Reveal() {
     _classCallCheck(this, Reveal);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Reveal).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Reveal, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Reveal.
      * @class
@@ -8881,16 +8897,16 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to use for the modal.
      * @param {Object} options - optional parameters.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Reveal.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Reveal.defaults, this.$element.data(), options);
       this.className = 'Reveal'; // ie9 back compat
 
       this._init(); // Touch and Triggers init are idempotent, just need to make sure they are initialized
 
 
-      Touch.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Touch.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
       Keyboard.register('Reveal', {
         'ESCAPE': 'close'
       });
@@ -8915,7 +8931,7 @@ function (_Plugin) {
       this.$anchor = jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-open=\"".concat(this.id, "\"]")).length ? jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-open=\"".concat(this.id, "\"]")) : jquery__WEBPACK_IMPORTED_MODULE_0___default()("[data-toggle=\"".concat(this.id, "\"]"));
       this.$anchor.attr({
         'aria-controls': this.id,
-        'aria-haspopup': true,
+        'aria-haspopup': 'dialog',
         'tabindex': 0
       });
 
@@ -9043,7 +9059,7 @@ function (_Plugin) {
 
       if (this.options.closeOnClick && this.options.overlay) {
         this.$overlay.off('.zf.reveal').on('click.zf.dropdown tap.zf.dropdown', function (e) {
-          if (e.target === _this.$element[0] || jquery__WEBPACK_IMPORTED_MODULE_0___default.a.contains(_this.$element[0], e.target) || !jquery__WEBPACK_IMPORTED_MODULE_0___default.a.contains(document, e.target)) {
+          if (e.target === _this.$element[0] || jquery__WEBPACK_IMPORTED_MODULE_0___default().contains(_this.$element[0], e.target) || !jquery__WEBPACK_IMPORTED_MODULE_0___default().contains(document, e.target)) {
             return;
           }
 
@@ -9198,12 +9214,12 @@ function (_Plugin) {
         });
       } // jQuery method of reveal
       else {
-          if (this.options.overlay) {
-            this.$overlay.show(0);
-          }
+        if (this.options.overlay) {
+          this.$overlay.show(0);
+        }
 
-          this.$element.show(this.options.showDelay);
-        } // handle accessibility
+        this.$element.show(this.options.showDelay);
+      } // handle accessibility
 
 
       this.$element.attr({
@@ -9279,7 +9295,7 @@ function (_Plugin) {
 
       if (!this.options.overlay && this.options.closeOnClick && !this.options.fullScreen) {
         jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').on('click.zf.dropdown tap.zf.dropdown', function (e) {
-          if (e.target === _this.$element[0] || jquery__WEBPACK_IMPORTED_MODULE_0___default.a.contains(_this.$element[0], e.target) || !jquery__WEBPACK_IMPORTED_MODULE_0___default.a.contains(document, e.target)) {
+          if (e.target === _this.$element[0] || jquery__WEBPACK_IMPORTED_MODULE_0___default().contains(_this.$element[0], e.target) || !jquery__WEBPACK_IMPORTED_MODULE_0___default().contains(document, e.target)) {
             return;
           }
 
@@ -9323,14 +9339,14 @@ function (_Plugin) {
         Motion.animateOut(this.$element, this.options.animationOut, finishUp);
       } // jQuery method of hiding
       else {
-          this.$element.hide(this.options.hideDelay);
+        this.$element.hide(this.options.hideDelay);
 
-          if (this.options.overlay) {
-            this.$overlay.hide(0, finishUp);
-          } else {
-            finishUp();
-          }
-        } // Conditionals to remove extra event listeners added on open
+        if (this.options.overlay) {
+          this.$overlay.hide(0, finishUp);
+        } else {
+          finishUp();
+        }
+      } // Conditionals to remove extra event listeners added on open
 
 
       if (this.options.closeOnEsc) {
@@ -9414,12 +9430,12 @@ function (_Plugin) {
     }
   }, {
     key: "_destroy",
-
+    value:
     /**
      * Destroys an instance of a modal.
      * @function
      */
-    value: function _destroy() {
+    function _destroy() {
       if (this.options.overlay) {
         this.$element.appendTo(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.options.appendTo)); // move $element outside of $overlay to prevent error unregisterPlugin()
 
@@ -9579,20 +9595,20 @@ Reveal.defaults = {
  * @requires foundation.util.touch
  */
 
-var Slider =
-/*#__PURE__*/
-function (_Plugin) {
+var Slider = /*#__PURE__*/function (_Plugin) {
   _inherits(Slider, _Plugin);
+
+  var _super = _createSuper(Slider);
 
   function Slider() {
     _classCallCheck(this, Slider);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Slider).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Slider, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of a slider control.
      * @class
@@ -9600,14 +9616,14 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into a slider control.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Slider.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Slider.defaults, this.$element.data(), options);
       this.className = 'Slider'; // ie9 back compat
       // Touch and Triggers inits are idempotent, we just need to make sure it's initialied.
 
-      Touch.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Touch.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
 
@@ -10377,20 +10393,20 @@ function baseLog(base, value) {
  */
 
 
-var Sticky =
-/*#__PURE__*/
-function (_Plugin) {
+var Sticky = /*#__PURE__*/function (_Plugin) {
   _inherits(Sticky, _Plugin);
+
+  var _super = _createSuper(Sticky);
 
   function Sticky() {
     _classCallCheck(this, Sticky);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Sticky).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Sticky, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of a sticky thing.
      * @class
@@ -10398,13 +10414,13 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make sticky.
      * @param {Object} options - options object passed when creating the element programmatically.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Sticky.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Sticky.defaults, this.$element.data(), options);
       this.className = 'Sticky'; // ie9 back compat
       // Triggers init is idempotent, just need to make sure it is initialized
 
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
     }
@@ -10956,20 +10972,20 @@ function emCalc(em) {
  */
 
 
-var Tabs =
-/*#__PURE__*/
-function (_Plugin) {
+var Tabs = /*#__PURE__*/function (_Plugin) {
   _inherits(Tabs, _Plugin);
+
+  var _super = _createSuper(Tabs);
 
   function Tabs() {
     _classCallCheck(this, Tabs);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Tabs).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Tabs, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of tabs.
      * @class
@@ -10978,9 +10994,9 @@ function (_Plugin) {
      * @param {jQuery} element - jQuery object to make into tabs.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Tabs.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Tabs.defaults, this.$element.data(), options);
       this.className = 'Tabs'; // ie9 back compat
 
       this._init();
@@ -11090,15 +11106,15 @@ function (_Plugin) {
             _this2.selectTab($anchor, true);
           } // Otherwise, collapse everything
           else {
-              _this2._collapse();
-            } // Roll up a little to show the titles
+            _this2._collapse();
+          } // Roll up a little to show the titles
 
 
           if (_this2.options.deepLinkSmudge) {
             var offset = _this2.$element.offset();
 
             jquery__WEBPACK_IMPORTED_MODULE_0___default()('html, body').animate({
-              scrollTop: offset.top
+              scrollTop: offset.top - _this2.options.deepLinkSmudgeOffset
             }, _this2.options.deepLinkSmudgeDelay);
           }
           /**
@@ -11349,7 +11365,7 @@ function (_Plugin) {
     }
   }, {
     key: "_setHeight",
-
+    value:
     /**
      * Sets the height of each panel to the height of the tallest panel.
      * If enabled in options, gets called on media query change.
@@ -11358,10 +11374,14 @@ function (_Plugin) {
      * @function
      * @private
      */
-    value: function _setHeight() {
+    function _setHeight() {
       var max = 0,
           _this = this; // Lock down the `this` value for the root tabs object
 
+
+      if (!this.$tabContent) {
+        return;
+      }
 
       this.$tabContent.find(".".concat(this.options.panelClass)).css('height', '').each(function () {
         var panel = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this),
@@ -11440,6 +11460,14 @@ Tabs.defaults = {
    * @default 300
    */
   deepLinkSmudgeDelay: 300,
+
+  /**
+   * If `deepLinkSmudge` is enabled, animation offset from the top for the deep link adjustment
+   * @option
+   * @type {number}
+   * @default 0
+   */
+  deepLinkSmudgeOffset: 0,
 
   /**
    * If `deepLink` is enabled, update the browser history with the open tab
@@ -11521,20 +11549,20 @@ Tabs.defaults = {
  * @requires foundation.util.triggers
  */
 
-var Toggler =
-/*#__PURE__*/
-function (_Plugin) {
+var Toggler = /*#__PURE__*/function (_Plugin) {
   _inherits(Toggler, _Plugin);
+
+  var _super = _createSuper(Toggler);
 
   function Toggler() {
     _classCallCheck(this, Toggler);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Toggler).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Toggler, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of Toggler.
      * @class
@@ -11543,14 +11571,14 @@ function (_Plugin) {
      * @param {Object} element - jQuery object to add the trigger to.
      * @param {Object} options - Overrides to the default plugin settings.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Toggler.defaults, element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Toggler.defaults, element.data(), options);
       this.className = '';
       this.className = 'Toggler'; // ie9 back compat
       // Triggers init is idempotent, just need to make sure it is initialized
 
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
 
@@ -11578,17 +11606,17 @@ function (_Plugin) {
         $triggers.attr('aria-expanded', !this.$element.is(':hidden'));
       } // Otherwise, parse toggle class
       else {
-          input = this.options.toggler;
+        input = this.options.toggler;
 
-          if (typeof input !== 'string' || !input.length) {
-            throw new Error("The 'toogler' option containing the target class is required, got \"".concat(input, "\""));
-          } // Allow for a . at the beginning of the string
+        if (typeof input !== 'string' || !input.length) {
+          throw new Error("The 'toggler' option containing the target class is required, got \"".concat(input, "\""));
+        } // Allow for a . at the beginning of the string
 
 
-          this.className = input[0] === '.' ? input.slice(1) : input; // - aria-expanded: according to the elements class set.
+        this.className = input[0] === '.' ? input.slice(1) : input; // - aria-expanded: according to the elements class set.
 
-          $triggers.attr('aria-expanded', this.$element.hasClass(this.className));
-        } // - aria-controls: adding the element id to it if not already in it.
+        $triggers.attr('aria-expanded', this.$element.hasClass(this.className));
+      } // - aria-controls: adding the element id to it if not already in it.
 
 
       $triggers.each(function (index, trigger) {
@@ -11713,20 +11741,20 @@ Toggler.defaults = {
  * @requires foundation.util.triggers
  */
 
-var Tooltip =
-/*#__PURE__*/
-function (_Positionable) {
+var Tooltip = /*#__PURE__*/function (_Positionable) {
   _inherits(Tooltip, _Positionable);
+
+  var _super = _createSuper(Tooltip);
 
   function Tooltip() {
     _classCallCheck(this, Tooltip);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Tooltip).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Tooltip, [{
     key: "_setup",
-
+    value:
     /**
      * Creates a new instance of a Tooltip.
      * @class
@@ -11735,15 +11763,15 @@ function (_Positionable) {
      * @param {jQuery} element - jQuery object to attach a tooltip to.
      * @param {Object} options - object to extend the default configuration.
      */
-    value: function _setup(element, options) {
+    function _setup(element, options) {
       this.$element = element;
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, Tooltip.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, Tooltip.defaults, this.$element.data(), options);
       this.className = 'Tooltip'; // ie9 back compat
 
       this.isActive = false;
       this.isClick = false; // Triggers init is idempotent, just need to make sure it is initialized
 
-      Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+      Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
 
       this._init();
     }
@@ -12242,17 +12270,17 @@ var MenuPlugins$1 = {
  * @requires foundation.tabs
  */
 
-var ResponsiveAccordionTabs =
-/*#__PURE__*/
-function (_Plugin) {
+var ResponsiveAccordionTabs = /*#__PURE__*/function (_Plugin) {
   _inherits(ResponsiveAccordionTabs, _Plugin);
+
+  var _super = _createSuper(ResponsiveAccordionTabs);
 
   function ResponsiveAccordionTabs(element, options) {
     var _this2;
 
     _classCallCheck(this, ResponsiveAccordionTabs);
 
-    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(ResponsiveAccordionTabs).call(this, element, options));
+    _this2 = _super.call(this, element, options);
     return _possibleConstructorReturn(_this2, _this2.options.reflow && _this2.storezfData || _assertThisInitialized(_this2));
   }
   /**
@@ -12270,7 +12298,7 @@ function (_Plugin) {
     value: function _setup(element, options) {
       this.$element = jquery__WEBPACK_IMPORTED_MODULE_0___default()(element);
       this.$element.data('zfPluginBase', this);
-      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default.a.extend({}, ResponsiveAccordionTabs.defaults, this.$element.data(), options);
+      this.options = jquery__WEBPACK_IMPORTED_MODULE_0___default().extend({}, ResponsiveAccordionTabs.defaults, this.$element.data(), options);
       this.rules = this.$element.data('responsive-accordion-tabs');
       this.currentMq = null;
       this.currentRule = null;
@@ -12317,7 +12345,7 @@ function (_Plugin) {
 
       this._getAllOptions();
 
-      if (!jquery__WEBPACK_IMPORTED_MODULE_0___default.a.isEmptyObject(this.rules)) {
+      if (!jquery__WEBPACK_IMPORTED_MODULE_0___default().isEmptyObject(this.rules)) {
         this._checkMediaQueries();
       }
     }
@@ -12374,7 +12402,7 @@ function (_Plugin) {
           _this = this; // Iterate through each rule and find the last matching rule
 
 
-      jquery__WEBPACK_IMPORTED_MODULE_0___default.a.each(this.rules, function (key) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default().each(this.rules, function (key) {
         if (MediaQuery.atLeast(key)) {
           matchedMq = key;
         }
@@ -12384,7 +12412,7 @@ function (_Plugin) {
 
       if (this.currentPlugin instanceof this.rules[matchedMq].plugin) return; // Remove existing plugin-specific CSS classes
 
-      jquery__WEBPACK_IMPORTED_MODULE_0___default.a.each(MenuPlugins$1, function (key, value) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default().each(MenuPlugins$1, function (key, value) {
         _this.$element.removeClass(value.cssClass);
       }); // Add the CSS class for the new plugin
 
@@ -12547,7 +12575,7 @@ function (_Plugin) {
 }(Plugin);
 
 ResponsiveAccordionTabs.defaults = {};
-Foundation.addToJquery(jquery__WEBPACK_IMPORTED_MODULE_0___default.a); // Add Foundation Utils to Foundation global namespace for backwards
+Foundation.addToJquery((jquery__WEBPACK_IMPORTED_MODULE_0___default())); // Add Foundation Utils to Foundation global namespace for backwards
 // compatibility.
 
 Foundation.rtl = rtl;
@@ -12565,8 +12593,8 @@ Foundation.Nest = Nest;
 Foundation.Timer = Timer; // Touch and Triggers previously were almost purely sede effect driven,
 // so no need to add it to Foundation, just init them.
 
-Touch.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
-Triggers.init(jquery__WEBPACK_IMPORTED_MODULE_0___default.a, Foundation);
+Touch.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()));
+Triggers.init((jquery__WEBPACK_IMPORTED_MODULE_0___default()), Foundation);
 
 MediaQuery._init();
 
@@ -12600,28 +12628,28 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/* module decorator */ module = __webpack_require__.nmd(module);
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*!
- * jQuery JavaScript Library v3.5.1
+ * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
  *
  * Includes Sizzle.js
  * https://sizzlejs.com/
  *
- * Copyright JS Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2020-05-04T22:49Z
+ * Date: 2021-03-02T17:08Z
  */
 (function (global, factory) {
   "use strict";
 
-  if (( false ? undefined : _typeof(module)) === "object" && _typeof(module.exports) === "object") {
+  if (( false ? 0 : _typeof(module)) === "object" && _typeof(module.exports) === "object") {
     // For CommonJS and CommonJS-like environments where a proper `window`
     // is present, execute the factory and get jQuery.
     // For environments that do not have a `window` with a `document`
@@ -12669,7 +12697,10 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     // In some browsers, typeof returns "function" for HTML <object> elements
     // (i.e., `typeof document.createElement( "object" ) === "function"`).
     // We don't want to classify *any* DOM node as a function.
-    return typeof obj === "function" && typeof obj.nodeType !== "number";
+    // Support: QtWeb <=3.8.5, WebKit <=534.34, wkhtmltopdf tool <=0.12.5
+    // Plus for old WebKit, typeof returns "function" for HTML collections
+    // (e.g., `typeof document.getElementsByTagName("div") === "function"`). (gh-4756)
+    return typeof obj === "function" && typeof obj.nodeType !== "number" && typeof obj.item !== "function";
   };
 
   var isWindow = function isWindow(obj) {
@@ -12727,7 +12758,7 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
   // unguarded in another place, it seems safer to define global only for this module
 
 
-  var version = "3.5.1",
+  var version = "3.6.0",
       // Define a local copy of jQuery
   jQuery = function jQuery(selector, context) {
     // The jQuery object is actually just the init constructor 'enhanced'
@@ -13054,14 +13085,14 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
   var Sizzle =
   /*!
-   * Sizzle CSS Selector Engine v2.3.5
+   * Sizzle CSS Selector Engine v2.3.6
    * https://sizzlejs.com/
    *
    * Copyright JS Foundation and other contributors
    * Released under the MIT license
    * https://js.foundation/
    *
-   * Date: 2020-03-14
+   * Date: 2021-02-16
    */
   function (window) {
     var i,
@@ -13561,8 +13592,8 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
      */
 
     isXML = Sizzle.isXML = function (elem) {
-      var namespace = elem.namespaceURI,
-          docElem = (elem.ownerDocument || elem).documentElement; // Support: IE <=8
+      var namespace = elem && elem.namespaceURI,
+          docElem = elem && (elem.ownerDocument || elem).documentElement; // Support: IE <=8
       // Assume HTML when documentElement doesn't yet exist, such as inside loading iframes
       // https://bugs.jquery.com/ticket/4833
 
@@ -15226,7 +15257,6 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
   }
 
-  ;
   var rsingleTag = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i; // Implement the identical functionality for filter and not
 
   function winnow(elements, qualifier, not) {
@@ -15797,9 +15827,9 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
           return _promise.then(null, fn);
         },
         // Keep pipe for back-compat
-        pipe: function pipe()
-        /* fnDone, fnFail, fnProgress */
-        {
+        pipe: function
+          /* fnDone, fnFail, fnProgress */
+        pipe() {
           var fns = arguments;
           return jQuery.Deferred(function (newDefer) {
             jQuery.each(tuples, function (_i, tuple) {
@@ -15995,8 +16025,8 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
           // subordinate fulfillment data
       resolveContexts = Array(i),
           resolveValues = _slice.call(arguments),
-          // the master Deferred
-      master = jQuery.Deferred(),
+          // the primary Deferred
+      primary = jQuery.Deferred(),
           // subordinate callback factory
       updateFunc = function updateFunc(i) {
         return function (value) {
@@ -16004,26 +16034,26 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
           resolveValues[i] = arguments.length > 1 ? _slice.call(arguments) : value;
 
           if (! --remaining) {
-            master.resolveWith(resolveContexts, resolveValues);
+            primary.resolveWith(resolveContexts, resolveValues);
           }
         };
       }; // Single- and empty arguments are adopted like Promise.resolve
 
 
       if (remaining <= 1) {
-        adoptValue(singleValue, master.done(updateFunc(i)).resolve, master.reject, !remaining); // Use .then() to unwrap secondary thenables (cf. gh-3000)
+        adoptValue(singleValue, primary.done(updateFunc(i)).resolve, primary.reject, !remaining); // Use .then() to unwrap secondary thenables (cf. gh-3000)
 
-        if (master.state() === "pending" || isFunction(resolveValues[i] && resolveValues[i].then)) {
-          return master.then();
+        if (primary.state() === "pending" || isFunction(resolveValues[i] && resolveValues[i].then)) {
+          return primary.then();
         }
       } // Multiple arguments are aggregated like Promise.all array elements
 
 
       while (i--) {
-        adoptValue(resolveValues[i], updateFunc(i), master.reject);
+        adoptValue(resolveValues[i], updateFunc(i), primary.reject);
       }
 
-      return master.promise();
+      return primary.promise();
     }
   }); // These usually indicate a programmer mistake during development,
   // warn about them ASAP rather than swallowing them by default.
@@ -16950,9 +16980,7 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     return fragment;
   }
 
-  var rkeyEvent = /^key/,
-      rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
-      rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
+  var rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
 
   function returnTrue() {
     return true;
@@ -17477,8 +17505,13 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
             if (saved !== result) {
               // Cancel the outer synthetic event
               event.stopImmediatePropagation();
-              event.preventDefault();
-              return result.value;
+              event.preventDefault(); // Support: Chrome 86+
+              // In Chrome, if an element having a focusout handler is blurred by
+              // clicking outside of it, it invokes the handler synchronously. If
+              // that handler calls `.remove()` on the element, the data is cleared,
+              // leaving `result` undefined. We need to guard against this.
+
+              return result && result.value;
             } // If this is an inner synthetic event for an event with a bubbling surrogate
             // (focus or blur), assume that the surrogate already propagated from triggering the
             // native event and prevent that from happening again here.
@@ -17614,32 +17647,7 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     targetTouches: true,
     toElement: true,
     touches: true,
-    which: function which(event) {
-      var button = event.button; // Add which for key events
-
-      if (event.which == null && rkeyEvent.test(event.type)) {
-        return event.charCode != null ? event.charCode : event.keyCode;
-      } // Add which for click: 1 === left; 2 === middle; 3 === right
-
-
-      if (!event.which && button !== undefined && rmouseEvent.test(event.type)) {
-        if (button & 1) {
-          return 1;
-        }
-
-        if (button & 2) {
-          return 3;
-        }
-
-        if (button & 4) {
-          return 2;
-        }
-
-        return 0;
-      }
-
-      return event.which;
-    }
+    which: true
   }, jQuery.event.addProp);
   jQuery.each({
     focus: "focusin",
@@ -17659,6 +17667,11 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
         // Force setup before trigger
         leverageNative(this, type); // Return non-false to allow normal event-path propagation
 
+        return true;
+      },
+      // Suppress native focus or blur as it's already being fired
+      // in leverageNative.
+      _default: function _default() {
         return true;
       },
       delegateType: delegateType
@@ -18263,6 +18276,10 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
       // set in CSS while `offset*` properties report correct values.
       // Behavior in IE 9 is more subtle than in newer versions & it passes
       // some versions of this test; make sure not to make it pass there!
+      //
+      // Support: Firefox 70+
+      // Only Firefox includes border widths
+      // in computed dimensions. (gh-4529)
       reliableTrDimensions: function reliableTrDimensions() {
         var table, tr, trChild, trStyle;
 
@@ -18270,12 +18287,23 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
           table = document.createElement("table");
           tr = document.createElement("tr");
           trChild = document.createElement("div");
-          table.style.cssText = "position:absolute;left:-11111px";
+          table.style.cssText = "position:absolute;left:-11111px;border-collapse:separate";
+          tr.style.cssText = "border:1px solid"; // Support: Chrome 86+
+          // Height set through cssText does not get applied.
+          // Computed height then comes back as 0.
+
           tr.style.height = "1px";
-          trChild.style.height = "9px";
+          trChild.style.height = "9px"; // Support: Android 8 Chrome 86+
+          // In our bodyBackground.html iframe,
+          // display for all div elements is set to "inline",
+          // which causes a problem only in Android 8 Chrome 86.
+          // Ensuring the div is display: block
+          // gets around this issue.
+
+          trChild.style.display = "block";
           documentElement.appendChild(table).appendChild(tr).appendChild(trChild);
           trStyle = window.getComputedStyle(tr);
-          reliableTrDimensionsVal = parseInt(trStyle.height) > 3;
+          reliableTrDimensionsVal = parseInt(trStyle.height, 10) + parseInt(trStyle.borderTopWidth, 10) + parseInt(trStyle.borderBottomWidth, 10) === tr.offsetHeight;
           documentElement.removeChild(table);
         }
 
@@ -20340,7 +20368,7 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
   var rquery = /\?/; // Cross-browser xml parsing
 
   jQuery.parseXML = function (data) {
-    var xml;
+    var xml, parserErrorElem;
 
     if (!data || typeof data !== "string") {
       return null;
@@ -20350,12 +20378,14 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
     try {
       xml = new window.DOMParser().parseFromString(data, "text/xml");
-    } catch (e) {
-      xml = undefined;
-    }
+    } catch (e) {}
 
-    if (!xml || xml.getElementsByTagName("parsererror").length) {
-      jQuery.error("Invalid XML: " + data);
+    parserErrorElem = xml && xml.getElementsByTagName("parsererror")[0];
+
+    if (!xml || parserErrorElem) {
+      jQuery.error("Invalid XML: " + (parserErrorElem ? jQuery.map(parserErrorElem.childNodes, function (el) {
+        return el.textContent;
+      }).join("\n") : data));
     }
 
     return xml;
@@ -21097,10 +21127,10 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
         if (responses) {
           response = ajaxHandleResponses(s, jqXHR, responses);
-        } // Use a noop converter for missing script
+        } // Use a noop converter for missing script but not if jsonp
 
 
-        if (!isSuccess && jQuery.inArray("script", s.dataTypes) > -1) {
+        if (!isSuccess && jQuery.inArray("script", s.dataTypes) > -1 && jQuery.inArray("json", s.dataTypes) < 0) {
           s.converters["text script"] = function () {};
         } // Convert no matter what (that way responseXXX fields are always set)
 
@@ -21737,14 +21767,6 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
       if ("using" in options) {
         options.using.call(elem, props);
       } else {
-        if (typeof props.top === "number") {
-          props.top += "px";
-        }
-
-        if (typeof props.left === "number") {
-          props.left += "px";
-        }
-
         curElem.css(props);
       }
     }
@@ -22044,7 +22066,7 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
       return jQuery;
     }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
 
   var // Map over jQuery in case of overwrite
@@ -22073,41 +22095,6 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
   return jQuery;
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
-
-/***/ }),
-
-/***/ "./node_modules/webpack/buildin/module.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/module.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (module) {
-  if (!module.webpackPolyfill) {
-    module.deprecate = function () {};
-
-    module.paths = []; // module.parent = undefined by default
-
-    if (!module.children) module.children = [];
-    Object.defineProperty(module, "loaded", {
-      enumerable: true,
-      get: function get() {
-        return module.l;
-      }
-    });
-    Object.defineProperty(module, "id", {
-      enumerable: true,
-      get: function get() {
-        return module.i;
-      }
-    });
-    module.webpackPolyfill = 1;
-  }
-
-  return module;
-};
 
 /***/ }),
 
@@ -22115,22 +22102,22 @@ module.exports = function (module) {
 /*!****************************************************!*\
   !*** ./node_modules/what-input/dist/what-input.js ***!
   \****************************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/* module decorator */ module = __webpack_require__.nmd(module);
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /**
  * what-input - A global utility for tracking the current input method (mouse, keyboard or touch).
- * @version v5.1.2
+ * @version v5.2.10
  * @link https://github.com/ten1seven/what-input
  * @license MIT
  */
 (function webpackUniversalModuleDefinition(root, factory) {
-  if (( false ? undefined : _typeof(exports)) === 'object' && ( false ? undefined : _typeof(module)) === 'object') module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else {}
+  if (( false ? 0 : _typeof(exports)) === 'object' && ( false ? 0 : _typeof(module)) === 'object') module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else {}
 })(this, function () {
   return (
     /******/
@@ -22147,7 +22134,7 @@ module.exports = function (module) {
 
       /******/
 
-      function __webpack_require__(moduleId) {
+      function __nested_webpack_require_1326__(moduleId) {
         /******/
         // Check if module is in cache
 
@@ -22177,7 +22164,7 @@ module.exports = function (module) {
 
         /******/
 
-        modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+        modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_1326__);
         /******/
         // Flag the module as loaded
 
@@ -22198,31 +22185,31 @@ module.exports = function (module) {
       /******/
 
 
-      __webpack_require__.m = modules;
+      __nested_webpack_require_1326__.m = modules;
       /******/
       // expose the module cache
 
       /******/
 
-      __webpack_require__.c = installedModules;
+      __nested_webpack_require_1326__.c = installedModules;
       /******/
       // __webpack_public_path__
 
       /******/
 
-      __webpack_require__.p = "";
+      __nested_webpack_require_1326__.p = "";
       /******/
       // Load entry module and return exports
 
       /******/
 
-      return __webpack_require__(0);
+      return __nested_webpack_require_1326__(0);
       /******/
-    }(
+    }
     /************************************************************************/
 
     /******/
-    [
+    ([
     /* 0 */
 
     /***/
@@ -22268,23 +22255,13 @@ module.exports = function (module) {
 
         var currentInput = 'initial'; // last used input intent
 
-        var currentIntent = currentInput; // check for sessionStorage support
-        // then check for session variables and use if available
+        var currentIntent = currentInput; // UNIX timestamp of current event
 
-        try {
-          if (window.sessionStorage.getItem('what-input')) {
-            currentInput = window.sessionStorage.getItem('what-input');
-          }
+        var currentTimestamp = Date.now(); // check for a `data-whatpersist` attribute on either the `html` or `body` elements, defaults to `true`
 
-          if (window.sessionStorage.getItem('what-intent')) {
-            currentIntent = window.sessionStorage.getItem('what-intent');
-          }
-        } catch (e) {} // event buffer timer
+        var shouldPersist = 'false'; // form input types
 
-
-        var eventTimer = null; // form input types
-
-        var formInputs = ['input', 'select', 'textarea']; // empty array for holding callback functions
+        var formInputs = ['button', 'input', 'select', 'textarea']; // empty array for holding callback functions
 
         var functionList = []; // list of modifier keys commonly used with the mouse and
         // can be safely ignored to prevent false keyboard detection
@@ -22306,11 +22283,10 @@ module.exports = function (module) {
           MSPointerMove: 'pointer',
           pointerdown: 'pointer',
           pointermove: 'pointer',
-          touchstart: 'touch' // boolean: true if touch buffer is active
+          touchstart: 'touch',
+          touchend: 'touch' // boolean: true if the page is being scrolled
 
         };
-        var isBuffering = false; // boolean: true if the page is being scrolled
-
         var isScrolling = false; // store current mouse position
 
         var mousePos = {
@@ -22334,7 +22310,8 @@ module.exports = function (module) {
             }
           });
           window.addEventListener('test', null, opts);
-        } catch (e) {}
+        } catch (e) {} // fail silently
+
         /*
          * set up
          */
@@ -22344,8 +22321,6 @@ module.exports = function (module) {
           // add correct mouse wheel event mapping to `inputMap`
           inputMap[detectWheel()] = 'mouse';
           addListeners();
-          doUpdate('input');
-          doUpdate('intent');
         };
         /*
          * events
@@ -22358,7 +22333,8 @@ module.exports = function (module) {
           // and are treated separately
           var options = supportsPassive ? {
             passive: true
-          } : false; // pointer events (mouse, pen, touch)
+          } : false;
+          document.addEventListener('DOMContentLoaded', setPersist); // pointer events (mouse, pen, touch)
 
           if (window.PointerEvent) {
             window.addEventListener('pointerdown', setInput);
@@ -22372,7 +22348,7 @@ module.exports = function (module) {
             window.addEventListener('mousemove', setIntent); // touch events
 
             if ('ontouchstart' in window) {
-              window.addEventListener('touchstart', eventBuffer, options);
+              window.addEventListener('touchstart', setInput, options);
               window.addEventListener('touchend', setInput);
             }
           } // mouse wheel
@@ -22380,52 +22356,69 @@ module.exports = function (module) {
 
           window.addEventListener(detectWheel(), setIntent, options); // keyboard events
 
-          window.addEventListener('keydown', eventBuffer);
-          window.addEventListener('keyup', eventBuffer); // focus events
+          window.addEventListener('keydown', setInput);
+          window.addEventListener('keyup', setInput); // focus events
 
           window.addEventListener('focusin', setElement);
           window.addEventListener('focusout', clearElement);
+        }; // checks if input persistence should happen and
+        // get saved state from session storage if true (defaults to `false`)
+
+
+        var setPersist = function setPersist() {
+          shouldPersist = !(docElem.getAttribute('data-whatpersist') || document.body.getAttribute('data-whatpersist') === 'false');
+
+          if (shouldPersist) {
+            // check for session variables and use if available
+            try {
+              if (window.sessionStorage.getItem('what-input')) {
+                currentInput = window.sessionStorage.getItem('what-input');
+              }
+
+              if (window.sessionStorage.getItem('what-intent')) {
+                currentIntent = window.sessionStorage.getItem('what-intent');
+              }
+            } catch (e) {// fail silently
+            }
+          } // always run these so at least `initial` state is set
+
+
+          doUpdate('input');
+          doUpdate('intent');
         }; // checks conditions before updating new input
 
 
         var setInput = function setInput(event) {
-          // only execute if the event buffer timer isn't running
-          if (!isBuffering) {
-            var eventKey = event.which;
-            var value = inputMap[event.type];
+          var eventKey = event.which;
+          var value = inputMap[event.type];
 
-            if (value === 'pointer') {
-              value = pointerType(event);
-            }
+          if (value === 'pointer') {
+            value = pointerType(event);
+          }
 
-            var ignoreMatch = !specificMap.length && ignoreMap.indexOf(eventKey) === -1;
-            var specificMatch = specificMap.length && specificMap.indexOf(eventKey) !== -1;
-            var shouldUpdate = value === 'keyboard' && eventKey && (ignoreMatch || specificMatch) || value === 'mouse' || value === 'touch';
+          var ignoreMatch = !specificMap.length && ignoreMap.indexOf(eventKey) === -1;
+          var specificMatch = specificMap.length && specificMap.indexOf(eventKey) !== -1;
+          var shouldUpdate = value === 'keyboard' && eventKey && (ignoreMatch || specificMatch) || value === 'mouse' || value === 'touch'; // prevent touch detection from being overridden by event execution order
 
-            if (currentInput !== value && shouldUpdate) {
-              currentInput = value;
+          if (validateTouch(value)) {
+            shouldUpdate = false;
+          }
 
-              try {
-                window.sessionStorage.setItem('what-input', currentInput);
-              } catch (e) {}
+          if (shouldUpdate && currentInput !== value) {
+            currentInput = value;
+            persistInput('input', currentInput);
+            doUpdate('input');
+          }
 
-              doUpdate('input');
-            }
+          if (shouldUpdate && currentIntent !== value) {
+            // preserve intent for keyboard interaction with form fields
+            var activeElem = document.activeElement;
+            var notFormInput = activeElem && activeElem.nodeName && (formInputs.indexOf(activeElem.nodeName.toLowerCase()) === -1 || activeElem.nodeName.toLowerCase() === 'button' && !checkClosest(activeElem, 'form'));
 
-            if (currentIntent !== value && shouldUpdate) {
-              // preserve intent for keyboard typing in form fields
-              var activeElem = document.activeElement;
-              var notFormInput = activeElem && activeElem.nodeName && formInputs.indexOf(activeElem.nodeName.toLowerCase()) === -1;
-
-              if (notFormInput) {
-                currentIntent = value;
-
-                try {
-                  window.sessionStorage.setItem('what-intent', currentIntent);
-                } catch (e) {}
-
-                doUpdate('intent');
-              }
+            if (notFormInput) {
+              currentIntent = value;
+              persistInput('intent', currentIntent);
+              doUpdate('intent');
             }
           }
         }; // updates the doc and `inputTypes` array with new input
@@ -22438,26 +22431,19 @@ module.exports = function (module) {
 
 
         var setIntent = function setIntent(event) {
-          // test to see if `mousemove` happened relative to the screen to detect scrolling versus mousemove
-          detectScrolling(event); // only execute if the event buffer timer isn't running
-          // or scrolling isn't happening
+          var value = inputMap[event.type];
 
-          if (!isBuffering && !isScrolling) {
-            var value = inputMap[event.type];
+          if (value === 'pointer') {
+            value = pointerType(event);
+          } // test to see if `mousemove` happened relative to the screen to detect scrolling versus mousemove
 
-            if (value === 'pointer') {
-              value = pointerType(event);
-            }
 
-            if (currentIntent !== value) {
-              currentIntent = value;
+          detectScrolling(event); // only execute if scrolling isn't happening
 
-              try {
-                window.sessionStorage.setItem('what-intent', currentIntent);
-              } catch (e) {}
-
-              doUpdate('intent');
-            }
+          if ((!isScrolling && !validateTouch(value) || isScrolling && event.type === 'wheel' || event.type === 'mousewheel' || event.type === 'DOMMouseScroll') && currentIntent !== value) {
+            currentIntent = value;
+            persistInput('intent', currentIntent);
+            doUpdate('intent');
           }
         };
 
@@ -22481,21 +22467,15 @@ module.exports = function (module) {
           currentElement = null;
           docElem.removeAttribute('data-whatelement');
           docElem.removeAttribute('data-whatclasses');
-        }; // buffers events that frequently also fire mouse events
+        };
 
-
-        var eventBuffer = function eventBuffer(event) {
-          // set the current input
-          setInput(event); // clear the timer if it happens to be running
-
-          window.clearTimeout(eventTimer); // set the isBuffering to `true`
-
-          isBuffering = true; // run the timer
-
-          eventTimer = window.setTimeout(function () {
-            // if the timer runs out, set isBuffering back to `false`
-            isBuffering = false;
-          }, 100);
+        var persistInput = function persistInput(which, value) {
+          if (shouldPersist) {
+            try {
+              window.sessionStorage.setItem('what-' + which, value);
+            } catch (e) {// fail silently
+            }
+          }
         };
         /*
          * utilities
@@ -22509,12 +22489,20 @@ module.exports = function (module) {
             // treat pen like touch
             return event.pointerType === 'pen' ? 'touch' : event.pointerType;
           }
+        }; // prevent touch detection from being overridden by event execution order
+
+
+        var validateTouch = function validateTouch(value) {
+          var timestamp = Date.now();
+          var touchIsValid = value === 'mouse' && currentInput === 'touch' && timestamp - currentTimestamp < 200;
+          currentTimestamp = timestamp;
+          return touchIsValid;
         }; // detect version of mouse wheel event to use
-        // via https://developer.mozilla.org/en-US/docs/Web/Events/wheel
+        // via https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event
 
 
         var detectWheel = function detectWheel() {
-          var wheelType = void 0; // Modern browsers support "wheel"
+          var wheelType = null; // Modern browsers support "wheel"
 
           if ('onwheel' in document.createElement('div')) {
             wheelType = 'wheel';
@@ -22546,12 +22534,35 @@ module.exports = function (module) {
         };
 
         var detectScrolling = function detectScrolling(event) {
-          if (mousePos['x'] !== event.screenX || mousePos['y'] !== event.screenY) {
+          if (mousePos.x !== event.screenX || mousePos.y !== event.screenY) {
             isScrolling = false;
-            mousePos['x'] = event.screenX;
-            mousePos['y'] = event.screenY;
+            mousePos.x = event.screenX;
+            mousePos.y = event.screenY;
           } else {
             isScrolling = true;
+          }
+        }; // manual version of `closest()`
+
+
+        var checkClosest = function checkClosest(elem, tag) {
+          var ElementPrototype = window.Element.prototype;
+
+          if (!ElementPrototype.matches) {
+            ElementPrototype.matches = ElementPrototype.msMatchesSelector || ElementPrototype.webkitMatchesSelector;
+          }
+
+          if (!ElementPrototype.closest) {
+            do {
+              if (elem.matches(tag)) {
+                return elem;
+              }
+
+              elem = elem.parentElement || elem.parentNode;
+            } while (elem !== null && elem.nodeType === 1);
+
+            return null;
+          } else {
+            return elem.closest(tag);
           }
         };
         /*
@@ -22604,28 +22615,111 @@ module.exports = function (module) {
             if (position || position === 0) {
               functionList.splice(position, 1);
             }
+          },
+          clearStorage: function clearStorage() {
+            window.sessionStorage.clear();
           }
         };
       }();
       /***/
 
-    }])
+    }
+    /******/
+    ])
   );
 });
 
 ;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
-/***/ }),
+/***/ })
 
-/***/ "./src/assets/js/app.js":
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	!function() {
+/******/ 		__webpack_require__.nmd = function(module) {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
 /*!******************************!*\
   !*** ./src/assets/js/app.js ***!
   \******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
@@ -22638,7 +22732,7 @@ __webpack_require__.r(__webpack_exports__);
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
 
-window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
+window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 
 __webpack_require__(/*! foundation-sites */ "./node_modules/foundation-sites/dist/js/foundation.esm.js"); // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
@@ -22685,22 +22779,9 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date("Mar 28, 2022 11:00:00")) + 1 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date("Aug 21, 2022 10:30:00")) + 1 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
-
-/***/ }),
-
-/***/ 0:
-/*!************************************!*\
-  !*** multi ./src/assets/js/app.js ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! /Users/enzi/Documents/share_aug/src/assets/js/app.js */"./src/assets/js/app.js");
-
-
-/***/ })
-
-/******/ });
+}();
+/******/ })()
+;
 //# sourceMappingURL=app.js.map

@@ -1,278 +1,227 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html class="no-js" lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/jpg">
-	<title>Share Hackathon</title>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link href="assets/css/app.css" rel="stylesheet">
-	<style>
-	       @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-	</style>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico" />
+    <title>Share Hackathon</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style>
 </head>
+
 <body>
-	<div class="off-canvas-wrapper">
-		<div class="off-canvas position-left mobile-nav-container" data-off-canvas="" id="offCanvas">
-			<ul id="mobile-nav">
-				<li class="logo">
-					<a data-close="" href="index.html"><img class="nav-logo" src="assets/img/share-logo-white.png"></a>
-				</li>
-				<li class="about">
-					<a data-close="" href="https://share-hackathon.github.io/hackathon/#about">About</a>
-				</li>
-				<li>
-					<a data-close="" href="https://share-hackathon.github.io/hackathon/#schedule">Schedule</a>
-				</li><!--<li><a href="#themes" data-close>Themes</a></li>-->
-				<li>
-					<a data-close="" href="https://share-hackathon.github.io/hackathon/#participant">Participate</a>
-				</li><!--<li><a href="#judge" data-close>Judging</a></li>-->
-				<li>
-					<a data-close="" href="https://share-hackathon.github.io/hackathon/#faq">FAQ</a>
-				</li>
-				<li class="register-container" data-close="">
-					<br>
-					<a class="register-menu register-closed" href="#">CLOSED</a>
-				</li>
-			</ul>
-		</div>
-		<div class="off-canvas-content" data-off-canvas-content="">
-			<div class="grid-container full page-container">
-				<div class="grid-x">
-					<div class="small-12">
-						<div id="mobilemenu">
-							<div class="show-for-small hide-for-large" id="menu-nav-container">
-								<div class="grid-container full" id="mobile-logo">
-									<div class="grid-x">
-										<div class="small-12 cell" data-sticky-container="">
-											<div class="sticky" data-sticky="" data-top-anchor="mobilemenu:top">
-												<button class="" data-toggle="offCanvas" type="button"><svg id="icon-menu" viewbox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
-												<defs>
-													<style>
-													.cls-1{fill:#fff;}
-													</style>
-												</defs>
-												<rect class="cls-1" height="2" width="24"></rect>
-												<rect class="cls-1" height="2" width="24" y="18"></rect>
-												<rect class="cls-1" height="2" width="24" y="6"></rect>
-												<rect class="cls-1" height="2" width="24" y="12"></rect></svg></button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="background show-for-large"></div>
-						<div class="panel full-height-container" id="top">
-							<div class="grid-container center-alignment">
-								<div class="top text-right show-for-large"></div>
-								<div class="grid-x">
-									<div class="small-12 glass-border">
-										<div class="grid-x grid-padding-x grid-margin-x blur_background sub-container-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-											<div class="small-12 large-5 logo-box" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine"><img class="logo" src="assets/img/logo.svg"></div>
-											<div class="small-12 large-7 clock-box">
-												<h5 class="live-date">March <b>28th</b> - <b>29th</b></h5>
-												<h2>The <b>Hackathon</b> has begun!</h2><h5>Registration is closed for virtual attendees and remains open for in-person attendees.</h5> <h5><b>Good luck everyone!</b></h5>
-												<!--<div id="clockdiv">
-													<div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-														<span class="days number-font"></span>
-														<div class="smalltext text-center">
-															Days
-														</div>
-													</div>
-													<div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-														<span class="hours number-font"></span>
-														<div class="smalltext text-center">
-															Hours
-														</div>
-													</div>
-													<div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-														<span class="minutes number-font"></span>
-														<div class="smalltext text-center">
-															Minutes
-														</div>
-													</div>
-													<div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-														<span class="seconds number-font"></span>
-														<div class="smalltext text-center">
-															Seconds
-														</div>
-													</div>
-												</div>-->
-												<div class="header-copy">
-													<p>Create the basic building blocks to jumpstart an Open Source movement focused on management tools for mainframe resources. These building blocks can be used by businesses to create IBM Z automation anywhere in the world uniting IBM Z with other cloud managed platforms.</p>
-													<div class="grid-x">
-														<div class="cell small-12 medium-6">
-															Join the discussion:<br>
-															<a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
-														</div>
-														<div class="small-12 medium-6 conference-link">
-															Conference site:<br>
-															<a class="link-level" href="https://www.share.org/"><img class="share-logo" src="assets/img/share-logo.png"></a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="hide-for-small show-for-large" id="menu-nav-container">
-							<div class="grid-container full">
-								<div class="grid-x nav-grid">
-									<div class="small-12 cell" data-sticky-container="">
-										<div class="sticky menu-nav" data-btm-anchor="footer:top" data-sticky="" data-top-anchor="top:bottom">
-											<ul class="menu">
-												<li class="logo xhide-for-large">
-													<a class="nav-logo" href="index.html"><img class="nav-logo" src="assets/img/share-logo-white.png"></a>
-												</li>
-												<li class="about">
-													<a href="https://share-hackathon.github.io/hackathon/#about">About</a>
-												</li>
-												<li>
-													<a href="https://share-hackathon.github.io/hackathon/#schedule">Schedule</a>
-												</li><!--<li><a href="#themes" alt="Themes">Themes</a></li>-->
-												<li>
-													<a href="https://share-hackathon.github.io/hackathon/#participant">Participate</a>
-												</li><!--<li><a href="#judge" alt="Judging">Judging</a></li>-->
-												<li>
-													<a href="https://share-hackathon.github.io/hackathon/#faq">FAQ</a>
-												</li>
-												<li class="register-container"><button class="button register-menu register-closed">CLOSED</button></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="content-container">
-							<section id="about-section-container">
-								<div class="grid-container full section" id="about-section-container">
-									<div class="grid-container full border" id="about">
-										<div class="grid-x grid-padding-x">
-											<div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
-												<div class="grid-container full">
-													<div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-														<div class="cell small-12 medium-12 large-9 xlarge-7 xxlarge-6 about-copy">
-															<h3>Welcome to the</h3>
-															<h1><img alt="SHARE Hackathon" class="logo-about" src="assets/img/logo.png"></h1>
-															<h2>March 2022</h2><br>
-															<p>Come meet the next generation of IBM Z professionals, network with your peers, and share your own knowledge while getting hands-on exposure to the future of IBM Z applications. Register now to reserve a seat, be eligible to earn a badge, and stay informed about exclusive networking and hacking events taking place during the conference. This event will be a bring-your-own-computer event.</p>
-															<p>This event introduces you to the world of enterprise computing. Learn all about the strengths and capabilities of enterprise infrastructure when used in a hybrid cloud solution. During this two-day event you will learn how to code and interact with a live IBM Z mainframe through the full-stack development approach. You will also create code for a variety of applications including automating common administrative tasks and accessing data hosted on IBM Z using modern tooling and software.&nbsp;&nbsp;</p><br>
-															<!--<button class="button" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="50" data-open="registermodal">REGISTER</button>-->
-														</div><!--<div class="cell small-12 medium-1  large-4 xlarge-5 triangle medium-offset-1"><img src="assets/img/logo.png"></div>-->
-													</div>
-												</div>
-											</div>
-										</div>
-										<div id="schedule"></div>
-									</div><br>
-									<br>
-									<br>
-									<div class="grid-container full border">
-										<div class="grid-x grid-padding-x">
-											<div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
-												<div class="grid-container full">
-													<div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-														<div class="cell small-12 medium-12">
-															<h1><b>Schedule</b></h1>
-															<h4>March 28th - 29th</h4><br>
-															<table cellpadding="0" cellspacing="0" class="schedule-table">
-																<tr class="table-header">
-																	<th class="date">Date</th>
-																	<th class="time">CST Time</th>
-																	<th class="description">Event</th>
-																</tr>
-																<tr class="table-row">
-																	<td class="date">Monday | March 28th</td>
-																	<td class="time">10:00am - 4:00pm</td>
-																	<td class="description">
-																		<p>Join us for drop in office hours (in-person and virtually) for project questions and collaboration, tech talk, and networking with professionals from a variety of companies. Updates will be posted in Discord.</p><a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
-																	</td>
-																</tr><!--<tr class="table-row">
-                                <td class="date">Monday | March 28th</td>
-                                <td class="time">TBD</td>
-                                <td class="description">Networking Sessions</td>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas position-left mobile-nav-container" id="offCanvas" data-off-canvas>
+            <ul id="mobile-nav">
+                <li class="logo">
+                    <a href="index.html " data-close><img src="assets/img/share-logo-white.png " class="nav-logo "></a>
+                </li>
+                <li class="about"><a href="#about" data-close>About</a></li>
+                <li><a href="#schedule" data-close>Schedule</a></li>
+                <li><a href="#participant" data-close>Participate</a></li>
+                <li><a href="#faq" data-close>FAQ</a></li>
+                <li class="register-container " data-close><br><a href="https://www.share.org/Events/SHARE-Virtual-Experience/Registration " target="blank " class="register-menu ">REGISTER</a></li>
+            </ul>        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+            <div class="grid-container full page-container">
+                <div class="grid-x">
+
+                    <div class="small-12">
+                         <div id="mobilemenu">
+    <div id="menu-nav-container" class="show-for-small hide-for-large ">
+        <div class="grid-container full " id="mobile-logo">
+            <div class="grid-x ">
+                <div class="small-12 cell" data-sticky-container>
+                    <div class="sticky " data-sticky data-top-anchor="mobilemenu:top">
+                        <button type="button" class="" data-toggle="offCanvas"><svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20"><defs><style>.cls-1{fill:#fff;}</style></defs><rect class="cls-1" width="24" height="2"/><rect class="cls-1" y="18" width="24" height="2"/><rect class="cls-1" y="6" width="24" height="2"/><rect class="cls-1" y="12" width="24" height="2"/></svg></button>
+        
+                    </div>
+                </div>
+            </div>
+        </div>    </div>
+</div>
+<div class="background show-for-large"></div>
+<div class="panel full-height-container" id="top">
+    <div class="grid-container center-alignment">
+        <div class="top text-right show-for-large"></div>
+        <div class="grid-x">
+            <div class="small-12 glass-border">
+                <div class="grid-x grid-padding-x grid-margin-x blur_background sub-container-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="small-12 large-5 logo-box" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine"><img class="logo" src="assets/img/logo.svg">
+                    </div>
+                    <div class="small-12 large-7 clock-box">
+                        <h2 class="clock-title">The <b>Hack-a-thon</b> will begin in...</h2>
+
+                        <div id="clockdiv">
+                            <div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                                <span class="days number-font"></span>
+                                <div class="smalltext text-center">
+                                    Days
+                                </div>
+                            </div>
+                            <div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                                <span class="hours number-font"></span>
+                                <div class="smalltext text-center">
+                                    Hours
+                                </div>
+                            </div>
+                            <div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                                <span class="minutes number-font"></span>
+                                <div class="smalltext text-center">
+                                    Minutes
+                                </div>
+                            </div>
+                            <div class="time-cell" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                                <span class="seconds number-font"></span>
+                                <div class="smalltext text-center">
+                                    Seconds
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-copy">
+                            <p>Create the basic building blocks to jumpstart an Open Source movement focused on management tools for mainframe resources. These building blocks can be used by businesses to create IBM Z automation anywhere in the world uniting
+                                IBM Z with other cloud managed platforms.</p>
+                            <div class="grid-x">
+
+                                <div class="cell small-12 medium-6">Join the discussion:<br>
+                                    <a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
+                                </div>
+                                <div class="small-12 medium-6 conference-link">
+                                    Conference site: <br>
+                                    <a class="link-level" href="https://www.share.org/"><img class="share-logo" src="assets/img/share-logo.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="menu-nav-container" class="hide-for-small show-for-large ">
+    <div class="grid-container full ">
+        <div class="grid-x nav-grid">
+            <div class="small-12 cell " data-sticky-container>
+                <div class="sticky menu-nav" data-sticky data-top-anchor="top:bottom" data-btm-anchor="footer:top">
+                    <ul class="menu ">
+                        <li class="logo xhide-for-large">
+                            <a href="index.html" class="nav-logo"><img src="assets/img/share-logo-white.png" class="nav-logo"></a>
+                        </li>
+                        <li class="about"><a href="#about" alt="About">About</a></li>
+                        <li><a href="#schedule" alt="Schedule">Schedule</a></li>
+                        <li><a href="#participant" alt="Participate">Participate</a></li>
+                        <li><a href="#faq" alt="FAQ">FAQ</a></li>
+                        <li class="register-container"><a href="https://www.share.org/Events/SHARE-Virtual-Experience/Registration" target="blank" class="register-menu" alt="Register">REGISTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div></div>
+
+<div class="content-container">
+    <section id="about-section-container">
+        <div class="grid-container full section" id="about-section-container">
+            <div class="grid-container full border" id="about">
+    <div class="grid-x grid-padding-x ">
+        <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
+            <div class="grid-container full">
+                <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
+                    <div class="cell small-12 medium-12 large-9 xlarge-7 xxlarge-6 about-copy">
+                        <h3>Welcome to the</h3>
+                        <h1><img src="assets/img/logo.png" alt="SHARE Hackathon" class="logo-about"></h1>
+                        <h2>August 21-26, 2022</h2><br>
+                        <p>To compete in a cloud world, IBM Z needs to be able to communicate effectively with tools that reside off platform. This is critical if we want to be part of DevOps activities that are being embrace across the industry. At the
+                            same time, IBM Z resources need to be managed using tooling that is compatible with management of other cloud resources. We need to build Open Source tools and a community that enables IBM Z to be a peer in modern cloud environments.
+                            This hackathon is focused on energizing our efforts to enhance our relevance in modern cloud environments.&nbsp;</p><br>
+                        <a class="button " href="https://www.share.org/Events/SHARE-Virtual-Experience/Registration" target="blank" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="50">REGISTER</a>
+                    </div>
+                    <!--<div class="cell small-12 medium-1  large-4 xlarge-5 triangle medium-offset-1"><img src="assets/img/logo.png"></div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="schedule"></div>
+</div> <br><br><br><div class="grid-container full border">
+    <div class="grid-x grid-padding-x">
+        <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
+            <div class="grid-container full">
+                <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
+                    <div class="cell small-12 medium-12 schedule-dates">
+                        <h1><b>Schedule</b></h1>
+                        <h4>August 22nd to September 5th</h4><span class="virtual">Continue virtually August 27th to September 5th</span><br><br>
+                        <table cellspacing="0" cellpadding="0" class="schedule-table">
+                            <tr class="table-header">
+                                <th class="date">Date</th>
+                                <th class="time">EST Time</th>
+                                <th class="description">Event</th>
                             </tr>
                             <tr class="table-row">
-                                <td class="date">Monday | March 28th</td>
-                                <td class="time">1:00pm - 4:00pm</td>
-                                <td class="description">Hands-on REST API Enablement- Build Your Own Frontend Using IBM Z Data.</td>
+                                <td class="date"><b>Monday to Friday</b><br> August 22nd to 26th</td>
+                                <td class="time">10:30am - 3:00pm</td>
+                                <td class="description">
+                                    <p>Join us for a drop in office hours (in person and virtually) for project questions and collaboration, tech talk, and networking with professionals from a variety of companies. Updates will be posted in Discord.</p>
+                                    <a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
+                                </td>
                             </tr>
                             <tr class="table-row">
-                                <td class="date">Monday | March 28th</td>
-                                <td class="time">TBD</td>
-                                <td class="description">Networking Sessions</td>
-                            </tr>-->
-																<tr class="table-row">
-																	<td class="date">Tuesday | March 29th</td>
-																	<td class="time">10:00am - 4:00pm</td>
-																	<td class="description">
-																		<p>Join us for drop in office hours (in-person and virtually) for project questions and collaboration, tech talk, and networking with professionals from a variety of companies. Updates will be posted in Discord.</p><a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
-																	</td>
-																</tr><!--<tr class="table-row">
-                                <td class="date">Tuesday | March 29th</td>
-                                <td class="time">TBD</td>
-                                <td class="description">Networking Sessions</td>
+                                <td class="date"><b>Monday to Friday</b><br> August 29th to September 5th</td>
+                                <td class="time">10:30am - 3:00pm</td>
+                                <td class="description">
+                                    <p>Join us for virtual office hours for project questions and collaboration, tech talk, and networking with professionals from a variety of companies. Updates will be posted in Discord.</p>
+                                    <a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
+                                </td>
                             </tr>
-                            <tr class="table-row">
-                                <td class="date">Tuesday | March 29th</td>
-                                <td class="time">1:00pm - 4:00pm</td>
-                                <td class="description"><ul><li>Continue Hands-on Automation with IBM Z </li>
-                                    <li>Wrap Up</li>
-                                    </ul></td>
-                            </tr>
-                            <tr class="table-row">
-                                <td class="date">Tuesday | March 29th</td>
-                                <td class="time">TBD</td>
-                                <td class="description">Networking Sessions</td>
-                            </tr>-->
-															</table>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section><!-- <section>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <!-- <section>
         <div class="grid-container full section" id="schedule-section-container">
             <div class="grid-container full border">
                 <div class="grid-x grid-padding-x">
                     <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         <div class="grid-container full">
                             <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-                                <div class="cell small-12 medium-12">
+                                <div class="cell small-12 medium-12 schedule-dates">
                                     <h1><b>Schedule</b></h1>
-                                    <h4>August 2nd - 13th</h4><br>
+                                    <h4>August 22nd to September 5th</h4><span class="virtual">Continue virtually August 27th to September 5th</span><br><br>
                                     <table cellspacing="0" cellpadding="0" class="schedule-table">
                                         <tr class="table-header">
                                             <th class="date">Date</th>
-                                            <th class="time">CST Time</th>
+                                            <th class="time">EST Time</th>
                                             <th class="description">Event</th>
                                         </tr>
                                         <tr class="table-row">
-                                            <td class="date">Monday | March 28th</td>
-                                            <td class="time">9:00am - 10:00am</td>
-                                            <td class="description">Ready, Set, Start Hacking (kick-off)<br>Open enrollment / registration and start of hackathon</td>
+                                            <td class="date"><b>Monday to Friday</b><br> August 22nd to 26th</td>
+                                            <td class="time">10:30am - 3:00pm</td>
+                                            <td class="description">
+                                                <p>Join us for a drop in office hours (in person and virtually) for project questions and collaboration, tech talk, and networking with professionals from a variety of companies. Updates will be posted in Discord.</p>
+                                                <a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
+                                            </td>
                                         </tr>
                                         <tr class="table-row">
-                                            <td class="date">Monday | March 28th</td>
-                                            <td class="time">11:00am</td>
-                                            <td class="description">Team Building in Discord</td>
+                                            <td class="date"><b>Monday to Friday</b><br> August 29th to September 5th</td>
+                                            <td class="time">10:30am - 3:00pm</td>
+                                            <td class="description">
+                                                <p>Join us for virtual office hours for project questions and collaboration, tech talk, and networking with professionals from a variety of companies. Updates will be posted in Discord.</p>
+                                                <a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
+                                            </td>
                                         </tr>
-                                        <tr class="table-row">
-                                            <td class="date">Wednesday | March 30th</td>
-                                            <td class="time">9:00pm</td>
-                                            <td class="description">Video Demos due, judging and public voting starts</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <td class="date">Wednesday | March 30th</td>
-                                            <td class="time">12:30pm - 1:00pm</td>
-                                            <td class="description">Closing ceremony, winners announced</td>
-                                        </tr>
+            
                                     </table>
                                 </div>
                             </div>
@@ -281,157 +230,54 @@
                 </div>
             </div>        </div>
     </section>-->
-							<!--<section>
-        <div class="grid-container full section" id="themes">
-            <div class="themes-blur">
-                <div class="grid-container full border">
-                    <div class="grid-x grid-padding-x">
-                        <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                            <div class="grid-container full">
-                                <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-                                    <div class="cell small-12 medium-12">
-                                        <h1><b>Themes</b></h1>
-                                        <h5>Teams can choose to work on a project based on the following themes:</h5><br>
-                                    </div>
-                                    <!== Theme Container -->
-							<!--<div class="cell small-12 medium-12 large-6 xlarge-4 theme-container" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-out">
-                                        <div class="grid-x grid-padding-x grid-margin-x">
-                                            <div class="small-2 large-3 t-image"><img src="assets/img/t_com2.png"></div>
-                                            <div class="cell small-10 medium-9">
-                                                <div class="themes-content">
-                                                    <div class="theme-title">
-                                                        Communication Management
-                                                    </div>
-                                                    <div class="theme-body">
-                                                        Make Communication Server management tools that will enable automation to create and configure communication resources. Of example, such tools could automate the creation and management of TCP/IP end points like ports and define the limits of their use.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!== Theme Container end -->
-							<!-- Theme Container -->
-							<!--<div class="cell small-12 medium-12 large-6 xlarge-4 theme-container background-blur" data-aos="zoom-in" data-aos-offset="400" data-aos-easing="ease-in-out">
-                                        <div class="grid-x grid-padding-x grid-margin-x">
-                                            <div class="small-2 large-3 t-image"><img src="assets/img/t_system.png"></div>
-                                            <div class="cell small-10 medium-9">
-                                                <div class="themes-content">
-                                                    <div class="theme-title">
-                                                        System Management
-                                                    </div>
-                                                    <div class="theme-body">
-                                                        Create a set of tools to perform standard management functions of the system. Controlling resource access, the configuration of system functions, and setting limits on running environments are the focus of this theme, with an eye on making understanding
-                                                        and management of the platform environment automatable.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!== Theme Container end -->
-							<!-- Theme Container -->
-							<!--<div class="cell small-12 medium-12 large-6 xlarge-4 theme-container" data-aos="zoom-in" data-aos-offset="500" data-aos-easing="ease-in-out">
-                                        <div class="grid-x grid-padding-x grid-margin-x">
-                                            <div class="small-2 large-3 t-image"><img src="assets/img/t_security.png"></div>
-                                            <div class="cell small-10 medium-9">
-                                                <div class="themes-content">
-                                                    <div class="theme-title">
-                                                        Security Management
-                                                    </div>
-                                                    <div class="theme-body">
-                                                        Create building blocks that can be used to manage access to resources, provide user and group management, and report on security activity in the system. Interface with existing RACF, ACF2 and Top Secret environments using a homomorphic set of interfaces.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!== Theme Container end -->
-							<!-- Theme Container -->
-							<!--<div class="cell small-12 medium-12 large-6 xlarge-4 theme-container" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-out">
-                                        <div class="grid-x grid-padding-x grid-margin-x">
-                                            <div class="small-2 large-3 t-image"><img src="assets/img/t_subsys.png"></div>
-                                            <div class="cell small-10 medium-9">
-                                                <div class="themes-content">
-                                                    <div class="theme-title">
-                                                        Sub-System Management&nbsp;
-                                                    </div>
-                                                    <div class="theme-body">
-                                                        Create tools that can be used to manage CICS, IMS or WebSphere instances providing programmatic ways to configure environments, install new transactions, or modify existing environments or transactions.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!== Theme Container end -->
-							<!-- Theme Container -->
-							<!--<div class="cell small-12 medium-12 large-6 xlarge-4 theme-container" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
-                                        <div class="grid-x grid-padding-x grid-margin-x">
-                                            <div class="small-2 large-3 t-image"><img src="assets/img/t_database.png"></div>
-                                            <div class="cell small-10 medium-9">
-                                                <div class="themes-content">
-                                                    <div class="theme-title">
-                                                        Database Management
-                                                    </div>
-                                                    <div class="theme-body">
-                                                        Create tools that can be combined to provision, configure or manage Database environments. These tools should take into account the activities that database administrators perform, and provide streamlined ways to perform those tasks.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!== Theme Container end -->
-							<!--</div>
-                            </div>
+
+    <section>
+
+        <div class="grid-container full section" id="participant">
+
+            <div class="grid-container full border">
+                <div class="grid-x grid-padding-x">
+                    <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div class="grid-container full">
+                            <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
+                                <div class="cell small-12 medium-12">
+                                    <h1><b>Participate</b></h1>
+            
+                                </div>
+                                <div class="cell small-12 medium-12 large-6 xlarge-6 participant-block glass-border2">
+                                    <h3>Hacker</h3>
+                                    <hr><br>
+                                    <ul>
+                                        <li>Create or join a team</li>
+                                        <li>Decide on a theme and a project</li>
+                                        <li>Create Open Source code</li>
+                                        <li>Create a demo of the project for judging</li>
+                                        <li>Attend SHARE sessions</li>
+                                        <li>Attend and participate in Ask Us Anything sessions</li>
+                                        <li>Hear judge’s feedback</li>
+                                    </ul><br>
+                                    <a class="button " href="https://www.share.org/Events/SHARE-Virtual-Experience/Registration" target="blank" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="50">REGISTER</a>
+                                </div>
+                                <div class="cell small-12 medium-12 large-6 xlarge-6  participant-block">
+                                    <h3>Volunteer</h3>
+                                    <hr><br>
+                                    <ul>
+                                        <li>Project Liaison</li>
+                                        <li>Judging</li>
+                                        <li>Ask Me Anything Sessions</li>
+                                        <li>Approve GitHub Pull Requests•Monitor Discord Channel activity</li>
+                                        <li>Create the recap video montage</li>
+                                        <li>Many more...</li>
+                                    </ul>
+                                    <p class="volunteer">To volunteer email <a href="mailto:hackathon@share.org"><b>hackathon@share.org</b></a></p>
+                                </div>
+                            </div><br><br>
                         </div>
                     </div>
-                </div>            </div>
-        </div>
-    </section>-->
-							<section>
-								<div class="grid-container full section" id="participant">
-									<div class="grid-container full border">
-										<div class="grid-x grid-padding-x">
-											<div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
-												<div class="grid-container full">
-													<div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-														<div class="cell small-12 medium-12">
-															<h1><b>Participate</b></h1>
-														</div>
-														<div class="cell small-12 medium-12 large-6 xlarge-6 participant-block">
-															<h3>Hacker</h3>
-															<hr>
-															<br>
-															<ul>
-																<li>Create or join a team</li>
-																<li>Create Open Source code</li>
-																<li>Create a demo of the project for judging</li>
-																<li>Attend SHARE sessions</li>
-																<li>Attend and participate in Ask Us Anything sessions</li>
-																<li>Hear judge’s feedback</li>
-															</ul><br>
-															<button class="button register-closed" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="50" >CLOSED</button>
-														</div>
-														<div class="cell small-12 medium-12 large-6 xlarge-6 participant-block">
-															<h3>Volunteer</h3>
-															<hr>
-															<br>
-															<ul>
-																<li>Project Liaison</li>
-																<li>Judging</li>
-																<li>Ask Me Anything Sessions</li>
-																<li>Approve GitHub Pull Requests•Monitor Discord Channel activity</li>
-																<li>Create the recap video montage</li>
-																<li>Many more...</li>
-															</ul>
-															<p class="volunteer">To volunteer email <a href="mailto:hackathon.share@gmail.com"><b>hackathon.share@gmail.com</b></a></p>
-														</div>
-													</div><br>
-													<br>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section><!--<section>
+                </div>
+            </div>        </div>
+    </section>
+    <!--<section>
         <div class="grid-container full section" id="judge">
             <div class="grid-container full border">
                 <div class="grid-x grid-padding-x">
@@ -509,135 +355,163 @@
                 </div>
             </div>        </div>
     </section>-->
-							<section>
-								<div class="grid-container full section" id="faq">
-									<div class="grid-container fluid border">
-										<div class="grid-x grid-padding-x">
-											<div class="small-12 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
-												<div class="grid-container fluid">
-													<div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-														<div class="cell small-12 medium-12">
-															<h1><b>FAQ</b></h1><br>
-														</div>
-														<div class="cell small-12 medium-12 large-11 xlarge-11 xxlarge-10 about-copy">
-															<ul class="vertical menu accordion-menu" data-accordion-menu="">
-																<!-- container start -->
-																<li class="faq-row">
-																	<a class="faq-title" href="#">What is a Hackathon and how does it work?&nbsp;</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">A hackathon, or hacking marathon, is an event where technologists of all experience levels and specialties come together to solve important problems by “hacking” together cool projects. At the end of a hackathon, you demo your project to a panel of judges for a chance to win prizes!</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">Who can participate in this event?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">Anyone!</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">Where will this event be hosted?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">The event will be hosted entirely online. We will use Discord as our main hub of communication. In addition to Discord text and voice channels, you may choose to collaborate with your team members using tools like Zoom or Webex. All submissions will be hosted on GitHub and demo videos on YouTube.&nbsp;</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">What is the recommended size of a team?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">Teams should have a minimum of 1 and a maximum of 5 members.</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">What if I don’t have a team?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">We will be hosting a team building session in Discord immediately following the opening ceremony. If you do not have a team in mind, be sure to attend!</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">Can I start work on my project beforehand?&nbsp;</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">No, you cannot start any part of your project before the start date. You may brainstorm ideas based on the event’s tracks and form a team beforehand, though.</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">What is my time commitment for this event?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">Time commitment: The amount of time you commit is up to you. The more complex ideas will most likely require more time. Generally we expect teams to devote 8 hours of their time on a project. That's roughly an hour and ten minutes per day for the duration of the development part of the hackathon</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">I'm sold - how do I participate?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">Gather your team, pick a project and a category, then register your team using the "Register" button above. Each team should only submit one entry.</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">What do I need to present?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">Teams should prepare a 3 minute video presentation/demo - you may choose to prepare a slideshow, a demo or a combination. During your presentation, it should be clear what the challenge or problem you're trying to solve is, where you have innovated, what technologies you've employed, and finally the potential value if the project were to be carried forward.<br></li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">How do I prepare my presentation?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">
-																			<p>If you're presenting a slide show you may choose to use the "Record Slide Show" option from Microsoft PowerPoint and record your narration as you step through slides. Make sure to save these timing and narrations at the end and then export the PowerPoint as an MP4.</p>
-																			<p>Alternatively, if you're presenting a demo, Mac users may choose to use QuickTime to record a screen recording and Windows users may choose to use CamStudio which are both approved for use within G2O. Please make sure that your video includes clear audio before uploading.</p>
-																		</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">What do I need to do to submit?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">
-																			<p>Teams should upload their prepared video presentation to YouTube. All code and associated artifacts should be committed and uploaded to your teams GitHub repo within the organization.</p>
-																		</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">Which system should we be using for this event?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">
-																			<p>Instances/virtual environments with everything developers need to create, run and test their code and connectivity to an IBM Z system will be provided. Go to the Discord SHARE Hackathon channel to find instructions on connecting to the instances:<br>
-																			<br>
-																			<a class="faq-link" href="https://discord.gg/Af4yfm55H9" target="blank">Discord channel #general</a></p>
-																		</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">What is the primary form of communication? - Discord</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">
-																			<p>Our primary form of communication throughout the Hackathon will be Discord. This is where you will meet other hackers, connect with project liaisons for technical mentorship, and ask questions.</p>
-																			<p>Join the Discord server using this link:<a class="faq-link" href="https://discord.gg/wx4mQ5GgYa" target="blank">https://discord.gg/wx4mQ5GgYa</a></p>
-																			<p>If you have never used Discord before, check out this short tutorial video: <a class="faq-link" href="https://www.youtube.com/watch?v=OIqyPJQAgT4" target="blank">https://www.youtube.com/watch?v=OIqyPJQAgT4</a> or Discord’s Beginner Guide:<a class="faq-link" href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord" target="blank">https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord</a></p>
-																			<p>Please use your real name in Discord so we can grant you access to the appropriate channels for your role. If you need to update your Discord nickname, you can right click your name in the righthand sidebar and choose “Change Nickname” or use the /nick command followed by your desired name in a channel message. Changing your nickname in the SHARE Hackathon server will not change your nickname in other servers.</p>
-																			<p>Once you’re in Discord, check out the #welcome-and-rulesand #faq-and-schedulechannels for important information. Get help from Project Liaisons in #ask-a-liaisonor ask general logistical questions in #hackathon-questions. Use #generalfor friendly conversations with your fellow hackers!</p>
-																		</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<li class="faq-row">
-																	<a href="#">How do I use the DevOps PoT on Cloud?</a>
-																	<ul class="menu vertical nested faq-answer">
-																		<li class="faq-row-nested">
-																			<p>Download the instructions to learn how to use the DevOps PoT on Cloud remotely</p><a class="faq-link" href="assets/img/Instructions_to_use_the_DevOps_PoT.docx">Instructions_to_use_the_DevOps_PoT.docx</a>
-																		</li>
-																	</ul>
-																</li><!-- container end -->
-																<!-- container start -->
-																<!--<li class="faq-row">
+    <section>
+        <div class="grid-container full section" id="faq">
+            <div class="grid-container fluid border">
+                <div class="grid-x grid-padding-x">
+                    <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div class="grid-container fluid">
+                            <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
+                                <div class="cell small-12 medium-12">
+                                    <h1><b>FAQ</b></h1><br>
+                                </div>
+                                <div class="cell small-12 medium-12 large-11 xlarge-11 xxlarge-10 about-copy">
+                                    <ul class="vertical menu accordion-menu" data-accordion-menu="">
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a class="faq-title" href="#">What is a Hackathon and how does it work?&nbsp;</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">A hackathon, or hacking marathon, is an event where technologists of all experience levels and specialties come together to solve important problems by “hacking” together cool projects. At the end of a hackathon, you
+                                                    demo your project to a panel of judges for a chance to win prizes!</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">Who can participate in this event?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">Anyone!</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">Where will this event be hosted?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">The event will be hosted entirely online. We will use Discord as our main hub of communication. In addition to Discord text and voice channels, you may choose to collaborate with your team members using tools like Zoom
+                                                    or Webex. All submissions will be hosted on GitHub and demo videos on YouTube.&nbsp;</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">What is the recommended size of a team?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">Teams should have a minimum of 1 and a maximum of 5 members.</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">What if I don’t have a team?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">We will be hosting a team building session in Discord immediately following the opening ceremony. If you do not have a team in mind, be sure to attend!</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">Can I start work on my project beforehand?&nbsp;</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">No, you cannot start any part of your project before the start date. You may brainstorm ideas based on the event’s tracks and form a team beforehand, though.</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">What is my time commitment for this event?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">Time commitment: The amount of time you commit is up to you. The more complex ideas will most likely require more time. Generally we expect teams to devote 8 hours of their time on a project. That's roughly an hour
+                                                    and ten minutes per day for the duration of the development part of the hackathon</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">I'm sold - how do I participate?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">Gather your team, pick a project and a category, then register your team using the "Register" button above. Each team should only submit one entry.</li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">What do I need to present?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">Teams should prepare a 3 minute video presentation/demo - you may choose to prepare a slideshow, a demo or a combination. During your presentation, it should be clear what the challenge or problem you're trying to solve
+                                                    is, where you have innovated, what technologies you've employed, and finally the potential value if the project were to be carried forward.<br>
+                                                    <br> Videos should be uploaded to <b>YouTube by 9pm CST, August 11th.</b></li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">How do I prepare my presentation?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">
+                                                    <p>If you're presenting a slide show you may choose to use the "Record Slide Show" option from Microsoft PowerPoint and record your narration as you step through slides. Make sure to save these timing and narrations
+                                                        at the end and then export the PowerPoint as an MP4.</p>
+                                                    <p>Alternatively, if you're presenting a demo, Mac users may choose to use QuickTime to record a screen recording and Windows users may choose to use CamStudio which are both approved for use within G2O. Please make
+                                                        sure that your video includes clear audio before uploading.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">What do I need to do to submit?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">
+                                                    <p>Teams should upload their prepared video presentation to YouTube. All code and associated artifacts should be committed and uploaded to your teams GitHub repo within the organization.</p> <a class="faq-link" href="https://github.com/SHARE-hackathon-Summer-2021"
+                                                        target="blank">https://github.com/SHARE-hackathon-Summer-2021</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">Which system should we be using for this event?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">
+                                                    <p>Instances/virtual environments with everything developers need to create, run and test their code and connectivity to an IBM Z system will be provided. Go to the Discord SHARE Hackathon channel to find instructions
+                                                        on connecting to the instances:<br><br><a href="https://discord.gg/Af4yfm55H9" class="faq-link" target="blank">Discord channel #general</a> </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">What is the primary form of communication? - Discord</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">
+                                                    <p>Our primary form of communication throughout the Hackathon will be Discord. This is where you will meet other hackers, connect with project liaisons for technical mentorship, and ask questions.</p>
+                                                    <p>Join the Discord server using this link:<a href="https://discord.gg/Af4yfm55H9" class="faq-link" target="blank">https://discord.gg/Af4yfm55H9</a></p>
+                                                    <p>If you have never used Discord before, check out this short tutorial video: <a href="https://www.youtube.com/watch?v=OIqyPJQAgT4" class="faq-link" target="blank">https://www.youtube.com/watch?v=OIqyPJQAgT4</a> or
+                                                        Discord’s Beginner Guide:<a class="faq-link" href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord" target="blank">https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord</a></p>
+                                                    <p>Please use your real name in Discord so we can grant you access to the appropriate channels for your role. If you need to update your Discord nickname, you can right click your name in the righthand sidebar and
+                                                        choose “Change Nickname” or use the /nick command followed by your desired name in a channel message. Changing your nickname in the SHARE Hackathon server will not change your nickname in other servers.</p>
+                                                    <p>Once you’re in Discord, check out the #welcome-and-rulesand #faq-and-schedulechannels for important information. Get help from Project Liaisons in #ask-a-liaisonor ask general logistical questions in #hackathon-questions.
+                                                        Use #generalfor friendly conversations with your fellow hackers!</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <li class="faq-row">
+                                            <a href="#">How do I use the DevOps PoT on Cloud?</a>
+                                            <ul class="menu vertical nested faq-answer">
+                                                <li class="faq-row-nested">
+                                                    <p>Download the instructions to learn how to use the DevOps PoT on Cloud remotely</p>
+                                                    <a class="faq-link" href="assets/img/Instructions_to_use_the_DevOps_PoT.docx" download="Instructions_to_use_the_DevOps_PoT.docx"> 
+                                                        Instructions_to_use_the_DevOps_PoT.docx
+            </a>
+            
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- container end -->
+                                        <!-- container start -->
+                                        <!--<li class="faq-row">
                                             <a href="#">How do I get help?</a>
                                             <ul class="menu vertical nested faq-answer">
                                                 <li class="faq-row-nested">
@@ -645,78 +519,84 @@
                                                 </li>
                                             </ul>
                                         </li>-->
-																<!-- container end -->
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<section>
-								<div class="grid-container full section registration-block" id="register">
-									<div class="grid-container fluid border">
-										<div class="grid-x grid-padding-x fade" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-											<div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
-												<div class="grid-container fluid register-footer">
-													<div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
-														<div class="cell small-12 medium-10 large-10 xlarge-10 xxlarge-10 medium-offset-1 xlarge-offset-1 text-left text-center">
-															<h1><b><span class="title-register">2022 SHARE Hackathon is now on!</span></b></h1>
-															
-															<!--<button class="button reg-large-btn" data-open="registermodal">REGISTER</button>-->
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-						<section>
-							<div class="grid-container full section" id="footer">
-								<div class="grid-container fluid">
-									<div class="grid-x grid-padding-x grid-margin-y grid-padding-y about-content">
-										<div class="cell small-12 medium-12 large-12">
-											<div class="grid-container">
-												<div class="grid-x grid-padding-x grid-padding-y grid-margin-x">
-													<div class="cell small-12 medium-6 large-6 text-center">
-														<a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img class="discord-logo" src="assets/img/discord-logo.png"></a>
-													</div>
-													<div class="cell small-12 medium-6 large-6 text-center">
-														<a href="https://www.share.org/" target="blank"><img class="share-logo" src="assets/img/share-logo-white.png"></a>
-													</div><br>
-													<br>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div><!-- modals-->
-			<div class="reveal register-modal" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine" data-reveal="" id="registermodal">
-				<img src="assets/img/logo.png"><br>
-				<h2>Registration</h2>
-				<form action="https://formspree.io/f/mlezgydp" method="post">
-					<label>First Name <input name="firstname" placeholder="John" required="" type="text"></label> <label>Last Name <input name="lastname" placeholder="Smith" required="" type="text"></label> <label>Email Address <input name="email" placeholder="john@name.com" required="" type="text"></label><br>
-					<button aria-label="Close modal" class="button secondary cancel-modal-but" data-close="">Cancel</button> <button class="button register-modal-but" type="submit">Register</button> <button aria-label="Close modal" class="close-button" data-close="" type="button"><span aria-hidden="true">&times;</span></button>
-				</form>
-			</div>
-			<script src="assets/js/app.js" type="text/javascript">
-			</script> 
-			<script src="https://code.jquery.com/jquery-3.6.0.min.js">
-			</script> 
-			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-			</script> 
-			<script>
-			             AOS.init();
-			</script>
-		</div>
-	</div>
+                                        <!-- container end -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+    </section>
+    <section>
+        <div class="grid-container full section registration-block" id="register">
+            <div class="grid-container fluid border">
+                <div class="grid-x grid-padding-x fade" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <div class="small-10 small-offset-1" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div class="grid-container fluid">
+                            <div class="grid-x grid-padding-x grid-margin-x grid-margin-y fade">
+                                <div class="cell small-12 medium-10 large-10 xlarge-10 xxlarge-10 medium-offset-1 xlarge-offset-1 text-left text-center">
+                                    <h1><span class="title-register">Join the 2022</span></h1><img src="assets/img/logo.png" alt="SHARE Hackathon" class="logo-about">
+                                    <br><br>
+                                    <a href="https://www.share.org/Events/SHARE-Virtual-Experience/Registration" target="blank" class="button reg-large-btn">REGISTER</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+    </section>
+</div>
+<section>
+    <div class="grid-container full section" id="footer">
+        <div class="grid-container fluid">
+            <div class="grid-x grid-padding-x grid-margin-y grid-padding-y ">
+                <div class="cell small-12 medium-12 large-12">
+                    <div class="grid-container">
+                        <div class="grid-x grid-padding-x grid-padding-y grid-margin-x">
+                            <div class="cell small-12 medium-6 large-6 text-center">Communication:<br>
+                                <a href="https://discord.gg/wx4mQ5GgYa" target="blank"><img src="assets/img/discord-logo.png" class="discord-logo"></a>
+                            </div>
+                            <div class="cell small-12 medium-6 large-6 text-center">Conference site:<br>
+                                <a href="https://www.share.org/" target="blank"><img src="assets/img/share-logo-white.png" class="share-logo"></a>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    </div>
+</section>
+<section>
+    <div class="grid-container full section" id="presented">
+        <div class="grid-container fluid">
+            <div class="grid-x grid-padding-x grid-margin-y grid-padding-y ">
+                <div class="cell small-12 medium-12 large-12">
+                    <div class="grid-container">
+                        <div class="grid-x grid-padding-x grid-padding-y grid-margin-x">
+                            <div class="cell small-12  text-center"><b>2022 SHARE HACK-A-THON</b> is Presented by:</div>
+                            <div class="cell small-12  text-center logo-container">
+                                <a href="https://www.ibm.com" target="blank"><img src="assets/img/ibm-logo.svg" class="ibm-logo"></a>
+                                <a href="https://www.broadcom.com" target="blank"><img src="assets/img/broadcom-ltd-logo_w.svg" class="broadcom-logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    </div>
+</section>
+
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="assets/js/app.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+        </div>
+    </div>
 </body>
+
 </html>
